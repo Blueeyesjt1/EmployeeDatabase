@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="Updated version with database 52" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gradleDataBaseFX" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gradleDataBaseFX" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="refs/heads/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ ultimate\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hbo0ticHiOb9u5KgzvMh3BbXay" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+      <command value="gradleDataBaseFX [build]" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller" />
+      <module name="gradleDataBaseFX.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="gradleDataBaseFX.main" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Dropbox\Documents\School\Fall 2020\Obj Oriented Lang\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.media,javafx.graphics,javafx.swing,javafx.web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="console.sql (1)" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/console.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/57945b67-58fb-4b39-941e-d30a18a6b2a1/console.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="57945b67-58fb-4b39-941e-d30a18a6b2a1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gradleDataBaseFX [build]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="gradleDataBaseFX [dependencies]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Controller" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Database Script.console.sql" />
+      <item itemvalue="Database Script.console.sql (1)" />
+      <item itemvalue="Gradle.gradleDataBaseFX [build]" />
+      <item itemvalue="Gradle.gradleDataBaseFX [dependencies]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.console.sql (1)" />
+        <item itemvalue="Application.Controller" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\JadenW\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="" />
+      <created>1600288934795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600288934795</updated>
+      <workItem from="1600288938178" duration="4253000" />
+      <workItem from="1600293218517" duration="4819000" />
+      <workItem from="1600300438725" duration="16356000" />
+      <workItem from="1600443963647" duration="2736000" />
+      <workItem from="1600446772415" duration="1465000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated version with database">
+      <created>1600444392551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600444392551</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated version with database">
+      <created>1600444455302</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600444455302</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated version with database 2">
+      <created>1600444742455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600444742455</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated version with database 2">
+      <created>1600444982449</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600444982449</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated version with database 2">
+      <created>1600445002461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600445002461</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated version with database 3">
+      <created>1600446060711</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600446060711</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated version with database 3">
+      <created>1600446132280</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600446132280</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated version with database 5">
+      <created>1600446480746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600446480746</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated version with database 52">
+      <created>1600446749907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600446749907</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/gitHubRep" />
+      <path value="$PROJECT_DIR$/GIT" />
+      <path value="$PROJECT_DIR$/OOP" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Updated version with database" />
+    <MESSAGE value="Updated version with database 2" />
+    <MESSAGE value="Updated version with database 3" />
+    <MESSAGE value="Updated version with database 5" />
+    <MESSAGE value="Updated version with database 52" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version with database 52" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="820" y="224" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600447875740">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="820" y="224" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447875740" />
+    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1600359966840">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600359966840" />
+    <state x="1111" y="411" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1600356334176">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1111" y="411" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600356334176" />
+    <state x="1011" y="455" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1600356323048">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="455" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600356323048" />
+    <state x="249" y="123" width="2048" height="1148" key="DiffContextDialog" timestamp="1600447798327">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="249" y="123" width="2048" height="1148" key="DiffContextDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447798327" />
+    <state x="971" y="260" width="660" height="735" key="FileChooserDialogImpl" timestamp="1600448164258">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="971" y="260" width="660" height="735" key="FileChooserDialogImpl/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448164258" />
+    <state x="1081" y="568" key="Github.CreatePullRequestDialog" timestamp="1600445902690">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1081" y="568" key="Github.CreatePullRequestDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600445902690" />
+    <state x="1139" y="599" width="510" height="203" key="Github.ShareDialog" timestamp="1600447518331">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1139" y="599" width="510" height="203" key="Github.ShareDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447518331" />
+    <state width="2517" height="362" key="GridCell.Tab.0.bottom" timestamp="1600448006577">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="362" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006577" />
+    <state width="2517" height="362" key="GridCell.Tab.0.center" timestamp="1600448006577">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="362" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006577" />
+    <state width="2517" height="362" key="GridCell.Tab.0.left" timestamp="1600448006576">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="362" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006576" />
+    <state width="2517" height="362" key="GridCell.Tab.0.right" timestamp="1600448006577">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="362" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006577" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600295306001">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295306001" />
+    <state x="761" y="275" width="1497" height="1065" key="SettingsEditor" timestamp="1600448237462">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448237462" />
+    <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1600448182298">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448182298" />
+    <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600294431160">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600294431160" />
+    <state x="861" y="356" key="com.intellij.database.dbimport.ImportDialog" timestamp="1600295814713">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="861" y="356" key="com.intellij.database.dbimport.ImportDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295814713" />
+    <state x="1181" y="647" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1600295945318">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1181" y="647" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295945318" />
+    <state x="758" y="406" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1600295942230">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="758" y="406" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295942230" />
+    <state x="1098" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600448197424">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1098" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448197424" />
+    <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600445756769">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600445756769" />
+    <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1600290795572">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="937" y="331" width="672" height="677" key="run.anything.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600290795572" />
+    <state x="1111" y="492" key="svn.repositoryBrowser" timestamp="1600446707981">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1111" y="492" key="svn.repositoryBrowser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600446707981" />
+    <state x="1117" y="475" key="svn4idea.import.options" timestamp="1600446706753">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1117" y="475" key="svn4idea.import.options/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600446706753" />
+  </component>
+</project>

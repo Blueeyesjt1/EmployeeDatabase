@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+sourceCompatibility = 11
+
+javafx {
+    modules = [ 'javafx.controls' , 'javafx.fxml' ]
+    version = '11.0.2'
+}
+
+mainClassName = 'Main'
+
+group 'io.github.username'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:19.0.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.199'
+}
