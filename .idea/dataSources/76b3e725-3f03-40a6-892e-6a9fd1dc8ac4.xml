@@ -271,17 +271,23 @@
     <table id="195" parent="3" name="VIEWS">
       <ObjectId>-18</ObjectId>
     </table>
-    <table id="196" parent="4" name="DEPARTMENTS">
+    <sequence id="196" parent="4" name="SYSTEM_SEQUENCE_4A94EB80_CED6_4354_8C15_024640958EE3">
+      <ObjectId>4</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CacheSize>32</CacheSize>
+      <AutoCreated>1</AutoCreated>
+    </sequence>
+    <sequence id="197" parent="4" name="SYSTEM_SEQUENCE_86103DFB_6074_4FEE_9678_069233F64820">
+      <ObjectId>9</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CacheSize>32</CacheSize>
+      <AutoCreated>1</AutoCreated>
+    </sequence>
+    <table id="198" parent="4" name="PRODUCT">
       <ObjectId>3</ObjectId>
     </table>
-    <table id="197" parent="4" name="EMPLOYEES">
-      <ObjectId>9</ObjectId>
-    </table>
-    <table id="198" parent="4" name="JOBS">
-      <ObjectId>6</ObjectId>
-    </table>
-    <table id="199" parent="4" name="JOB_HISTORY">
-      <ObjectId>15</ObjectId>
+    <table id="199" parent="4" name="PRODUCTIONRECORD">
+      <ObjectId>8</ObjectId>
     </table>
     <column id="200" parent="163" name="CATALOG_NAME">
       <Position>1</Position>
@@ -1515,271 +1521,59 @@
       <Position>9</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="508" parent="196" name="DEPARTMENT_ID">
+    <column id="508" parent="198" name="ID">
       <Position>1</Position>
       <DataType>INT|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="509" parent="196" name="DEPARTMENT_NAME">
+    <column id="509" parent="198" name="NAME">
       <Position>2</Position>
-      <DataType>VARCHAR(30)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="510" parent="196" name="MANAGER_ID">
+    <column id="510" parent="198" name="TYPE">
       <Position>3</Position>
-      <DataType>INT|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="511" parent="196" name="LOCATION_ID">
+    <column id="511" parent="198" name="MANUFACTURER">
       <Position>4</Position>
-      <DataType>INT|0s</DataType>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <index id="512" parent="196" name="PRIMARY_KEY_9">
-      <ObjectId>4</ObjectId>
+    <index id="512" parent="198" name="PRIMARY_KEY_1">
+      <ObjectId>6</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>86</SourceTextLength>
-      <ColNames>DEPARTMENT_ID</ColNames>
+      <SourceTextLength>71</SourceTextLength>
+      <ColNames>ID</ColNames>
       <Unique>1</Unique>
       <AutoCreated>1</AutoCreated>
     </index>
-    <index id="513" parent="196" name="CONSTRAINT_INDEX_9F">
-      <ObjectId>27</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>83</SourceTextLength>
-      <ColNames>MANAGER_ID</ColNames>
-      <AutoCreated>1</AutoCreated>
+    <index id="513" parent="198" name="PRODUCT_ID_UINDEX">
+      <ObjectId>5</ObjectId>
+      <SourceTextLength>76</SourceTextLength>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
     </index>
-    <key id="514" parent="196" name="CONSTRAINT_9">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>DEPARTMENT_ID</ColNames>
+    <key id="514" parent="198" name="PRODUCT_PK">
+      <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="515" parent="196" name="CONSTRAINT_9F">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>MANAGER_ID</ColNames>
-      <RefTableName>EMPLOYEES</RefTableName>
-      <RefKeyName>PRIMARY_KEY_4</RefKeyName>
-      <RefColNames>EMPLOYEE_ID</RefColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-    </foreign-key>
-    <column id="516" parent="197" name="EMPLOYEE_ID">
+    <column id="515" parent="199" name="PRODUCTION_NUM">
       <Position>1</Position>
       <DataType>INT|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="517" parent="197" name="FIRST_NAME">
+    <column id="516" parent="199" name="PRODUCT_ID">
       <Position>2</Position>
-      <DataType>VARCHAR(20)|0s</DataType>
+      <DataType>INT|0s</DataType>
     </column>
-    <column id="518" parent="197" name="LAST_NAME">
+    <column id="517" parent="199" name="SERIAL_NUM">
       <Position>3</Position>
-      <DataType>VARCHAR(25)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>VARCHAR|0s</DataType>
     </column>
-    <column id="519" parent="197" name="EMAIL">
+    <column id="518" parent="199" name="DATE_PRODUCED">
       <Position>4</Position>
-      <DataType>VARCHAR(25)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>DATETIME|0s</DataType>
     </column>
-    <column id="520" parent="197" name="PHONE_INT">
-      <Position>5</Position>
-      <DataType>VARCHAR(20)|0s</DataType>
-    </column>
-    <column id="521" parent="197" name="HIRE_DATE">
-      <Position>6</Position>
-      <DataType>DATE|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="522" parent="197" name="JOB_ID">
-      <Position>7</Position>
-      <DataType>VARCHAR(10)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="523" parent="197" name="SALARY">
-      <Position>8</Position>
-      <DataType>FLOAT|0s</DataType>
-    </column>
-    <column id="524" parent="197" name="COMMISSION_PCT">
-      <Position>9</Position>
-      <DataType>FLOAT|0s</DataType>
-    </column>
-    <column id="525" parent="197" name="MANAGER_ID">
-      <Position>10</Position>
-      <DataType>INT|0s</DataType>
-    </column>
-    <column id="526" parent="197" name="DEPARTMENT_ID">
-      <Position>11</Position>
-      <DataType>INT|0s</DataType>
-    </column>
-    <column id="527" parent="197" name="BONUS">
-      <Position>12</Position>
-      <DataType>VARCHAR(5)|0s</DataType>
-    </column>
-    <index id="528" parent="197" name="PRIMARY_KEY_4">
-      <ObjectId>10</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>82</SourceTextLength>
-      <ColNames>EMPLOYEE_ID</ColNames>
-      <Unique>1</Unique>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <index id="529" parent="197" name="CONSTRAINT_INDEX_4">
-      <ObjectId>12</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>82</SourceTextLength>
-      <ColNames>EMAIL</ColNames>
-      <Unique>1</Unique>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <index id="530" parent="197" name="CONSTRAINT_INDEX_435">
-      <ObjectId>21</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>78</SourceTextLength>
-      <ColNames>JOB_ID</ColNames>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <index id="531" parent="197" name="CONSTRAINT_INDEX_4351">
-      <ObjectId>23</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>83</SourceTextLength>
-      <ColNames>MANAGER_ID</ColNames>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <index id="532" parent="197" name="CONSTRAINT_INDEX_43">
-      <ObjectId>19</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>84</SourceTextLength>
-      <ColNames>DEPARTMENT_ID</ColNames>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <key id="533" parent="197" name="CONSTRAINT_4">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>EMPLOYEE_ID</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <key id="534" parent="197" name="CONSTRAINT_43">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>EMAIL</ColNames>
-    </key>
-    <foreign-key id="535" parent="197" name="CONSTRAINT_4351F">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>JOB_ID</ColNames>
-      <RefTableName>JOBS</RefTableName>
-      <RefKeyName>PRIMARY_KEY_2</RefKeyName>
-      <RefColNames>JOB_ID</RefColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-    </foreign-key>
-    <foreign-key id="536" parent="197" name="CONSTRAINT_4351FF">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>MANAGER_ID</ColNames>
-      <RefTableName>EMPLOYEES</RefTableName>
-      <RefKeyName>PRIMARY_KEY_4</RefKeyName>
-      <RefColNames>EMPLOYEE_ID</RefColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-    </foreign-key>
-    <foreign-key id="537" parent="197" name="CONSTRAINT_4351">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>DEPARTMENT_ID</ColNames>
-      <RefTableName>DEPARTMENTS</RefTableName>
-      <RefKeyName>PRIMARY_KEY_9</RefKeyName>
-      <RefColNames>DEPARTMENT_ID</RefColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-    </foreign-key>
-    <check id="538" parent="197" name="CONSTRAINT_435">
-      <NameSurrogate>1</NameSurrogate>
-      <Predicate>(&quot;SALARY&quot; &gt; 0.0)</Predicate>
-    </check>
-    <column id="539" parent="198" name="JOB_ID">
-      <Position>1</Position>
-      <DataType>VARCHAR(10)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="540" parent="198" name="JOB_TITLE">
-      <Position>2</Position>
-      <DataType>VARCHAR(35)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="541" parent="198" name="MIN_SALARY">
-      <Position>3</Position>
-      <DataType>INT|0s</DataType>
-    </column>
-    <column id="542" parent="198" name="MAX_SALARY">
-      <Position>4</Position>
-      <DataType>INT|0s</DataType>
-    </column>
-    <index id="543" parent="198" name="PRIMARY_KEY_2">
-      <ObjectId>7</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>72</SourceTextLength>
-      <ColNames>JOB_ID</ColNames>
-      <Unique>1</Unique>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <key id="544" parent="198" name="CONSTRAINT_2">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>JOB_ID</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="545" parent="199" name="EMPLOYEE_ID">
-      <Position>1</Position>
-      <DataType>INT|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="546" parent="199" name="START_DATE">
-      <Position>2</Position>
-      <DataType>DATE|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="547" parent="199" name="END_DATE">
-      <Position>3</Position>
-      <DataType>DATE|0s</DataType>
-    </column>
-    <column id="548" parent="199" name="JOB_ID">
-      <Position>4</Position>
-      <DataType>VARCHAR(10)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="549" parent="199" name="DEPARTMENT_ID">
-      <Position>5</Position>
-      <DataType>INT|0s</DataType>
-    </column>
-    <index id="550" parent="199" name="PRIMARY_KEY_95">
-      <ObjectId>17</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>99</SourceTextLength>
-      <ColNames>EMPLOYEE_ID
-START_DATE</ColNames>
-      <Unique>1</Unique>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <index id="551" parent="199" name="CONSTRAINT_INDEX_9">
-      <ObjectId>25</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SourceTextLength>85</SourceTextLength>
-      <ColNames>DEPARTMENT_ID</ColNames>
-      <AutoCreated>1</AutoCreated>
-    </index>
-    <key id="552" parent="199" name="CONSTRAINT_950">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>EMPLOYEE_ID
-START_DATE</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="553" parent="199" name="CONSTRAINT_9505">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>DEPARTMENT_ID</ColNames>
-      <RefTableName>DEPARTMENTS</RefTableName>
-      <RefKeyName>PRIMARY_KEY_9</RefKeyName>
-      <RefColNames>DEPARTMENT_ID</RefColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-    </foreign-key>
-    <check id="554" parent="199" name="CONSTRAINT_95">
-      <NameSurrogate>1</NameSurrogate>
-      <Predicate>(&quot;END_DATE&quot; &gt; &quot;START_DATE&quot;)</Predicate>
-    </check>
   </database-model>
 </dataSource>

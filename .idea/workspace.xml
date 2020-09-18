@@ -19,7 +19,29 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="Updated version with database 52" />
+    <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="Updated version with database 52">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/storage_v2/_src_/database/HR.CgkAAA/schema/PUBLIC.aaZQjQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/storage_v2/_src_/database/HR.CgkAAA/schema/PUBLIC.aaZQjQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/HR.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/HR.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +84,7 @@
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -76,7 +99,6 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -98,14 +120,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dropbox\Documents\School\Fall 2020\Obj Oriented Lang\Projects\gradleDataBaseFX\gradleDataBaseFX\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dropbox\Documents\School\Fall 2020\Obj Oriented Lang\Projects\gradleDataBaseFX\src\main\resources" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
@@ -132,13 +161,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,7 +254,8 @@
       <workItem from="1600293218517" duration="4819000" />
       <workItem from="1600300438725" duration="16356000" />
       <workItem from="1600443963647" duration="2736000" />
-      <workItem from="1600446772415" duration="1465000" />
+      <workItem from="1600446772415" duration="12755000" />
+      <workItem from="1600459742942" duration="1723000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -324,6 +356,7 @@
       <path value="$PROJECT_DIR$/gitHubRep" />
       <path value="$PROJECT_DIR$/GIT" />
       <path value="$PROJECT_DIR$/OOP" />
+      <path value="$PROJECT_DIR$/gradleDataBaseFX" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Updated version with database" />
@@ -334,10 +367,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated version with database 52" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="820" y="224" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600447875740">
+    <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600451612793">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="820" y="224" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447875740" />
+    <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600451612793" />
     <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1600359966840">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -354,51 +387,59 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="249" y="123" width="2048" height="1148" key="DiffContextDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447798327" />
-    <state x="971" y="260" width="660" height="735" key="FileChooserDialogImpl" timestamp="1600448164258">
+    <state x="971" y="260" width="660" height="735" key="FileChooserDialogImpl" timestamp="1600459609974">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="971" y="260" width="660" height="735" key="FileChooserDialogImpl/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448164258" />
+    <state x="971" y="260" width="660" height="735" key="FileChooserDialogImpl/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459609974" />
+    <state x="1105" y="603" key="Github.CreateGistDialog" timestamp="1600448666162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1105" y="603" key="Github.CreateGistDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448666162" />
     <state x="1081" y="568" key="Github.CreatePullRequestDialog" timestamp="1600445902690">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1081" y="568" key="Github.CreatePullRequestDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600445902690" />
-    <state x="1139" y="599" width="510" height="203" key="Github.ShareDialog" timestamp="1600447518331">
+    <state x="1139" y="599" width="510" height="203" key="Github.ShareDialog" timestamp="1600458980286">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1139" y="599" width="510" height="203" key="Github.ShareDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447518331" />
-    <state width="2517" height="362" key="GridCell.Tab.0.bottom" timestamp="1600448006577">
+    <state x="1139" y="599" width="510" height="203" key="Github.ShareDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600458980286" />
+    <state x="872" y="406" key="Github.UntrackedFilesDialog" timestamp="1600448266442">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="362" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006577" />
-    <state width="2517" height="362" key="GridCell.Tab.0.center" timestamp="1600448006577">
+    <state x="872" y="406" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448266442" />
+    <state width="2517" height="355" key="GridCell.Tab.0.bottom" timestamp="1600461336056">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="362" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006577" />
-    <state width="2517" height="362" key="GridCell.Tab.0.left" timestamp="1600448006576">
+    <state width="2517" height="355" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600461336056" />
+    <state width="2517" height="355" key="GridCell.Tab.0.center" timestamp="1600461336055">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="362" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006576" />
-    <state width="2517" height="362" key="GridCell.Tab.0.right" timestamp="1600448006577">
+    <state width="2517" height="355" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600461336055" />
+    <state width="2517" height="355" key="GridCell.Tab.0.left" timestamp="1600461336055">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="362" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448006577" />
-    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600295306001">
+    <state width="2517" height="355" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600461336055" />
+    <state width="2517" height="355" key="GridCell.Tab.0.right" timestamp="1600461336056">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295306001" />
-    <state x="761" y="275" width="1497" height="1065" key="SettingsEditor" timestamp="1600448237462">
+    <state width="2517" height="355" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600461336056" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600451585846">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448237462" />
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600451585846" />
+    <state x="761" y="275" width="1497" height="1065" key="SettingsEditor" timestamp="1600459540312">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459540312" />
     <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1600448182298">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1600459581468">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448182298" />
-    <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600294431160">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459581468" />
+    <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600452528571">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600294431160" />
+    <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600452528571" />
     <state x="861" y="356" key="com.intellij.database.dbimport.ImportDialog" timestamp="1600295814713">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -411,18 +452,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="758" y="406" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295942230" />
-    <state x="1098" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600448197424">
+    <state x="1098" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600458942935">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1098" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448197424" />
-    <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600445756769">
+    <state x="1098" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600458942935" />
+    <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1600459555561">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600445756769" />
-    <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1600290795572">
+    <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459555561" />
+    <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1600459285283">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="937" y="331" width="672" height="677" key="run.anything.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600290795572" />
+    <state x="937" y="331" width="672" height="677" key="run.anything.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459285283" />
     <state x="1111" y="492" key="svn.repositoryBrowser" timestamp="1600446707981">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
