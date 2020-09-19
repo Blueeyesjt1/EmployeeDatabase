@@ -70,21 +70,21 @@ public class Controller {
       Class.forName(JDBC_DRIVER);
 
       //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER, PASS);
+      conn = DriverManager.getConnection(DB_URL, USER, PASS);   //Security bug - Temporary placeholders, will be modified in future.
 
       //STEP 3: Execute a query
-      stmt = conn.createStatement();
+      stmt = conn.createStatement();  //Temporary database testing. Will be modified in the future.
 
       //String empIDString = txtEmpID.getText();
 
       String sql = "SELECT EMAIL, FIRST_NAME, LAST_NAME " + "FROM EMPLOYEES "
           + "WHERE EMPLOYEE_ID = " /*+ empIDString*/;
 
-      ResultSet rs = stmt.executeQuery(sql);
+      ResultSet rs = stmt.executeQuery(sql);  //Temporary database testing. Will be modified in the future.
       rs.next();
-      String empEmail = rs.getString(1);
-      String empFirstName = rs.getString(2);
-      String empLastName = rs.getString(3);
+      //String empEmail = rs.getString(1);
+      //String empFirstName = rs.getString(2);
+      //String empLastName = rs.getString(3);
       //System.out.println(empFirstName + " " + empLastName + " " + empEmail);
 
       //empOutput.setText("Employee name is " + empFirstName + " " + empLastName + ", email is " + empEmail);
