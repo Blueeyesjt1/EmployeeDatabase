@@ -1,3 +1,10 @@
+/*
+  Programmer Name: Jaden Williams
+  Description: Main class that
+       creates window-program
+  Date: 9/18/2020
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

@@ -1,3 +1,11 @@
+/*
+  Programmer Name: Jaden Williams
+  Description: Controller class that
+       holds input variables and
+       gateway to H2 database
+  Date: 9/18/2020
+ */
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -62,8 +70,8 @@ public class Controller {
     //  Database credentials
     final String USER = "";
     final String PASS = "";
-    Connection conn = null;
-    Statement stmt = null;
+    Connection conn = null; //Temporary
+    Statement stmt = null; //Temporary
 
     try {
       // STEP 1: Register JDBC driver
@@ -77,11 +85,11 @@ public class Controller {
 
       //String empIDString = txtEmpID.getText();
 
-      String sql = "SELECT EMAIL, FIRST_NAME, LAST_NAME " + "FROM EMPLOYEES "
-          + "WHERE EMPLOYEE_ID = " /*+ empIDString*/;
+      //String sql = "SELECT EMAIL, FIRST_NAME, LAST_NAME " + "FROM EMPLOYEES "
+      //    + "WHERE EMPLOYEE_ID = " /*+ empIDString*/;
 
-      ResultSet rs = stmt.executeQuery(sql);  //Temporary database testing. Will be modified in the future.
-      rs.next();
+      //ResultSet rs = stmt.executeQuery(sql);  //Temporary database testing. Will be modified in the future.
+      //rs.next();
       //String empEmail = rs.getString(1);
       //String empFirstName = rs.getString(2);
       //String empLastName = rs.getString(3);
