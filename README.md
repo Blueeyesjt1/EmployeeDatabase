@@ -6,7 +6,6 @@ Websites used:
   https://stackoverflow.com/questions/38621389/intellij-wont-compile-basic-javafx-program-copied-from-documentation
   https://www.codota.com/code/java/methods/javafx.scene.control.SplitMenuButton/getItems
   
-Updates :
-  The project has a functional "quantity" button drop-down that allows you to choose however many of a product you'd like to set for your order.
-  
+Comments on code:
 
+  The initialize method in Controller.java has a for-loop to set each digit in the quantity drop down in Produce
