@@ -7,7 +7,7 @@ plugins {
 sourceCompatibility = 11
 
 javafx {
-    modules = [ 'javafx.controls' , 'javafx.fxml' ]
+    modules = ['javafx.controls', 'javafx.fxml']
     version = '11.0.2'
 }
 
