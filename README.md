@@ -5,7 +5,7 @@ Websites used:
   https://github.com/google/styleguide
   https://stackoverflow.com/questions/38621389/intellij-wont-compile-basic-javafx-program-copied-from-documentation
   https://www.codota.com/code/java/methods/javafx.scene.control.SplitMenuButton/getItems
-  
-Comments on code:
 
-  The initialize method in Controller.java has a for-loop to set each digit in the quantity drop down in Produce
+ <b>Updates:</b>
+ The program, in its ALPHA stage, is gives the user full access to all 3 tabs, with only 1 button being functional: The quantity drop-down on the produce tab.
+  
