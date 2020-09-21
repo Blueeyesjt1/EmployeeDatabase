@@ -20,19 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="&quot;SpotBugs&quot; bug-checking completed.">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/HR.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/HR.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +111,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -159,13 +150,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -252,7 +245,8 @@
       <workItem from="1600443963647" duration="2736000" />
       <workItem from="1600446772415" duration="12755000" />
       <workItem from="1600459742942" duration="10475000" />
-      <workItem from="1600526848710" duration="1135000" />
+      <workItem from="1600526848710" duration="2366000" />
+      <workItem from="1600699346312" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -366,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600478136396</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Small fixes done 01">
+      <created>1600530542343</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600530542343</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,9 +416,14 @@
     <MESSAGE value="More comments added to main scripts" />
     <MESSAGE value="More comments added to main scripts and etc." />
     <MESSAGE value="&quot;SpotBugs&quot; bug-checking completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;SpotBugs&quot; bug-checking completed." />
+    <MESSAGE value="Small fixes done 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="761" y="275" key="#Project_Structure" timestamp="1600699466455">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="761" y="275" key="#Project_Structure/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699466455" />
     <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600451612793">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -462,25 +468,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="406" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448266442" />
-    <state width="2517" height="298" key="GridCell.Tab.0.bottom" timestamp="1600521424009">
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom" timestamp="1600699482906">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="298" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600521424009" />
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
     <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254164" />
-    <state width="2517" height="298" key="GridCell.Tab.0.center" timestamp="1600521424009">
+    <state width="2517" height="297" key="GridCell.Tab.0.center" timestamp="1600699482906">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="298" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600521424009" />
+    <state width="2517" height="297" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
     <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
-    <state width="2517" height="298" key="GridCell.Tab.0.left" timestamp="1600521424009">
+    <state width="2517" height="297" key="GridCell.Tab.0.left" timestamp="1600699482906">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="298" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600521424009" />
+    <state width="2517" height="297" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
     <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
-    <state width="2517" height="298" key="GridCell.Tab.0.right" timestamp="1600521424009">
+    <state width="2517" height="297" key="GridCell.Tab.0.right" timestamp="1600699482906">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="298" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600521424009" />
+    <state width="2517" height="297" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
     <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600451585846">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -495,10 +501,10 @@
     </state>
     <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600480134735" />
     <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1600478139652">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1600530508145">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600478139652" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600530508145" />
     <state x="4495" y="322" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462266143" />
     <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600452528571">
       <screen x="0" y="0" width="2560" height="1400" />
