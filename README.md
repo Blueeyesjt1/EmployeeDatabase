@@ -7,5 +7,5 @@
   https://www.codota.com/code/java/methods/javafx.scene.control.SplitMenuButton/getItems
 
  <b>Updates:</b>
- The program, in its ALPHA stage, is gives the user full access to all 3 tabs, with only 1 button being functional: The quantity drop-down on the produce tab. Besides the visuals, the data-base is ready for implementation in the next stages of development.
+ The program, in its ALPHA stage, has given the user full access to all 3 tabs, with only 1 button being functional: The quantity drop-down on the produce tab. Besides the visuals, the data-base is ready for implementation in the next stages of development.
   
