@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="&quot;SpotBugs&quot; bug-checking completed.">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res.h2.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res.trace.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +245,7 @@
       <workItem from="1600446772415" duration="12755000" />
       <workItem from="1600459742942" duration="10475000" />
       <workItem from="1600526848710" duration="2366000" />
-      <workItem from="1600699346312" duration="130000" />
+      <workItem from="1600699346312" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -367,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600530542343</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Commit to check for any non-updated files">
+      <created>1600699510926</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1600699510926</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,17 +423,18 @@
     <MESSAGE value="More comments added to main scripts and etc." />
     <MESSAGE value="&quot;SpotBugs&quot; bug-checking completed." />
     <MESSAGE value="Small fixes done 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Commit to check for any non-updated files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit to check for any non-updated files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="761" y="275" key="#Project_Structure" timestamp="1600699466455">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="761" y="275" key="#Project_Structure/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699466455" />
-    <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600451612793">
+    <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600699680217">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600451612793" />
+    <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699680217" />
     <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1600359966840">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -448,10 +455,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="249" y="123" width="2048" height="1148" key="DiffContextDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600447798327" />
-    <state x="1375" y="321" width="660" height="735" key="FileChooserDialogImpl" timestamp="1600520886751">
+    <state x="1375" y="321" width="660" height="735" key="FileChooserDialogImpl" timestamp="1600699646695">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1375" y="321" width="660" height="735" key="FileChooserDialogImpl/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600520886751" />
+    <state x="1375" y="321" width="660" height="735" key="FileChooserDialogImpl/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699646695" />
     <state x="1105" y="603" key="Github.CreateGistDialog" timestamp="1600448666162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -468,25 +475,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="406" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448266442" />
-    <state width="2517" height="297" key="GridCell.Tab.0.bottom" timestamp="1600699482906">
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom" timestamp="1600699698268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699698268" />
     <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254164" />
-    <state width="2517" height="297" key="GridCell.Tab.0.center" timestamp="1600699482906">
+    <state width="2517" height="297" key="GridCell.Tab.0.center" timestamp="1600699698268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
+    <state width="2517" height="297" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699698268" />
     <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
-    <state width="2517" height="297" key="GridCell.Tab.0.left" timestamp="1600699482906">
+    <state width="2517" height="297" key="GridCell.Tab.0.left" timestamp="1600699698268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
+    <state width="2517" height="297" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699698268" />
     <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
-    <state width="2517" height="297" key="GridCell.Tab.0.right" timestamp="1600699482906">
+    <state width="2517" height="297" key="GridCell.Tab.0.right" timestamp="1600699698268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699482906" />
+    <state width="2517" height="297" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699698268" />
     <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600451585846">
       <screen x="0" y="0" width="2560" height="1400" />
