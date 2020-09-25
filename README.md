@@ -1,4 +1,4 @@
-# gradleDataBaseFX
+# Product Program
 
 <b>Websites used:</b>
   https://sites.google.com/site/profvanselow/course/cop-3003/oop-project
