@@ -6,6 +6,7 @@
   Date: 9/18/2020
  */
 
+import java.util.ArrayList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -22,7 +23,7 @@ public class Controller {
   private TextField txt_Manufacturer;
 
   @FXML   //Type box
-  private ChoiceBox<?> choice_Type;
+  private ChoiceBox<String> choice_Type;
 
   @FXML   //Produce box //
   private ListView<?> list_Produce;
@@ -35,13 +36,8 @@ public class Controller {
    */
   public void initialize() {
     System.out.println("Launched program");
-
-    for (int i = 0; i < 10; i++) {
-      String number = String.valueOf(i + 1);
-      combo_quantity.getItems().add(i, number);
-    }
-    combo_quantity.setEditable(true);
-    combo_quantity.getSelectionModel().selectFirst();
+    populateProductLineTabs();  //Populates item type dropdown
+    populateItemQuantity(); //Populates quantity dropdown
   }
 
   /**
@@ -106,6 +102,36 @@ public class Controller {
     } catch (SQLException e) {
       e.printStackTrace();
     }
+  }
+
+  /**
+   * Populates quantity tab with digits 1 - 10
+   */
+  void populateItemQuantity() {
+    for (int i = 0; i < 10; i++) {
+      String number = String.valueOf(i + 1);
+      combo_quantity.getItems().add(i, number);
+    }
+    combo_quantity.setEditable(true);
+    combo_quantity.getSelectionModel().selectFirst();
+  }
+
+
+  /**
+   * Populates all enum item types inside the itemType dropdown
+   */
+  void populateProductLineTabs() {
+    ArrayList<ItemType> typeNames = new ArrayList<ItemType>();
+
+    for(ItemType typeValue : ItemType.values()) {
+      typeNames.add(typeValue);
+    }
+    System.out.println("type array size = " + typeNames.size());
+
+    for(int i = 0; i < typeNames.size(); i++) {
+      choice_Type.getItems().add(i, typeNames.get(i).toString());
+    }
+    choice_Type.getSelectionModel().selectFirst();
   }
 
 }
