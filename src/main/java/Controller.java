@@ -35,6 +35,9 @@ public class Controller {
    * Initialized method used to set the quantity combobox values only (for now)
    */
   public void initialize() {
+
+    Widget newProductTest = new Widget("iPod45", "Apple", ItemType.AUDIO);  //Test widget
+
     System.out.println("Launched program");
     populateProductLineTabs();  //Populates item type dropdown
     populateItemQuantity(); //Populates quantity dropdown
@@ -74,7 +77,8 @@ public class Controller {
       Class.forName(JDBC_DRIVER);
 
       //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER, PASS);   //Security bug - Temporary placeholders, will be modified in future.
+      conn = DriverManager.getConnection(DB_URL, USER,
+          PASS);   //Security bug - Temporary placeholders, will be modified in future.
 
       //STEP 3: Execute a query
       stmt = conn.createStatement();  //Temporary database testing. Will be modified in the future.
@@ -123,12 +127,12 @@ public class Controller {
   void populateProductLineTabs() {
     ArrayList<ItemType> typeNames = new ArrayList<ItemType>();
 
-    for(ItemType typeValue : ItemType.values()) {
+    for (ItemType typeValue : ItemType.values()) {
       typeNames.add(typeValue);
     }
     System.out.println("type array size = " + typeNames.size());
 
-    for(int i = 0; i < typeNames.size(); i++) {
+    for (int i = 0; i < typeNames.size(); i++) {
       choice_Type.getItems().add(i, typeNames.get(i).toString());
     }
     choice_Type.getSelectionModel().selectFirst();

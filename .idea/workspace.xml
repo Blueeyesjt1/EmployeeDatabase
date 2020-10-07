@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="&quot;SpotBugs&quot; bug-checking completed.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ItemType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Widget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MultimediaControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -31,11 +28,57 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/HR.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/PUBLIC.aaZQjQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_51_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/HR.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/PUBLIC.aaZQjQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_18_2020_3_52_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/HR.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/PUBLIC.aaZQjQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/HR.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/HR.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ItemType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,17 +218,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="console.sql (1)" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/console.sql" />
       <script-mode>FILE</script-mode>
@@ -274,7 +306,9 @@
       <workItem from="1600895656532" duration="75000" />
       <workItem from="1600896500945" duration="841000" />
       <workItem from="1600900127388" duration="600000" />
-      <workItem from="1601045452563" duration="9238000" />
+      <workItem from="1601045452563" duration="15186000" />
+      <workItem from="1601496867455" duration="2671000" />
+      <workItem from="1601734877111" duration="6052000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -409,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600699724738</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Beta - Issue 1 - Update 2">
+      <created>1601058238318</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601058238318</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,9 +502,14 @@
     <MESSAGE value="Small fixes done 01" />
     <MESSAGE value="Commit to check for any non-updated files" />
     <MESSAGE value="Removed extra database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed extra database" />
+    <MESSAGE value="Beta - Issue 1 - Update 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta - Issue 1 - Update 2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="873" y="359" key="#Intentions" timestamp="1601736116193">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="359" key="#Intentions/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601736116193" />
     <state x="761" y="275" key="#Project_Structure" timestamp="1600699466455">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -472,10 +518,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600699680217" />
-    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1601056929283">
+    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1601751716901">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601056929283" />
+    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601751716901" />
     <state x="910" y="390" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1600527251780">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -484,6 +530,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1111" y="411" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600356334176" />
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601063208930">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601063208930" />
     <state x="1011" y="455" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1600356323048">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -512,25 +562,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="406" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448266442" />
-    <state width="2517" height="297" key="GridCell.Tab.0.bottom" timestamp="1601057698303">
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom" timestamp="1601504520284">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601057698303" />
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601504520284" />
     <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254164" />
-    <state width="2517" height="297" key="GridCell.Tab.0.center" timestamp="1601057698303">
+    <state width="2517" height="297" key="GridCell.Tab.0.center" timestamp="1601504520284">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601057698303" />
+    <state width="2517" height="297" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601504520284" />
     <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
-    <state width="2517" height="297" key="GridCell.Tab.0.left" timestamp="1601057698303">
+    <state width="2517" height="297" key="GridCell.Tab.0.left" timestamp="1601504520284">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601057698303" />
+    <state width="2517" height="297" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601504520284" />
     <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
-    <state width="2517" height="297" key="GridCell.Tab.0.right" timestamp="1601057698303">
+    <state width="2517" height="297" key="GridCell.Tab.0.right" timestamp="1601504520284">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="297" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601057698303" />
+    <state width="2517" height="297" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601504520284" />
     <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462254163" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600451585846">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -540,15 +590,15 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="249" y="123" key="MergeDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600475674541" />
-    <state x="761" y="275" width="1497" height="1065" key="SettingsEditor" timestamp="1601052432364">
+    <state x="761" y="275" width="1497" height="1065" key="SettingsEditor" timestamp="1601498328591">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601052432364" />
+    <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601498328591" />
     <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1601054015647">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1601064051154">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601054015647" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601064051154" />
     <state x="4495" y="322" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462266143" />
     <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600452528571">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -578,18 +628,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1051" y="592" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459555561" />
-    <state x="731" y="311" key="new project wizard" timestamp="1600894666333">
+    <state x="731" y="311" key="new project wizard" timestamp="1601500359901">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="731" y="311" key="new project wizard/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600894666333" />
-    <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1600459285283">
+    <state x="731" y="311" key="new project wizard/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601500359901" />
+    <state x="1124" y="458" key="refactoring.ChangeSignatureDialog" timestamp="1601736227265">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="937" y="331" width="672" height="677" key="run.anything.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600459285283" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1601055903107">
+    <state x="1124" y="458" key="refactoring.ChangeSignatureDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601736227265" />
+    <state x="937" y="331" width="672" height="677" key="run.anything.popup" timestamp="1601060789321">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601055903107" />
+    <state x="937" y="331" width="672" height="677" key="run.anything.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601060789321" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1601059365928">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601059365928" />
     <state x="1111" y="492" key="svn.repositoryBrowser" timestamp="1600446707981">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

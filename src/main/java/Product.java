@@ -1,17 +1,21 @@
 public abstract class Product {
 
-  int id;
-  String type;
-  String manufacturer;
-  String name;
+  protected int id;
+  protected ItemType type;
+  protected String manufacturer;
+  protected String name;
 
-  public Product(String type, String manufacturer, String name) {
+  public Product(String name, String manufacturer, ItemType type) {
     this.type = type;
     this.manufacturer = manufacturer;
     this.name = name;
+
+    System.out.println("Name: " + name +
+        "\n Manufacturer: " + manufacturer +
+        "\n Type: " + type);
   }
 
-  public int getId() {
+  int getId() {
     return id;
   }
 
@@ -34,7 +38,7 @@ public abstract class Product {
   @Override
   public String toString() {
     return "Name: " + name +
-        "\' Manufacturer: " + manufacturer +
-        "\' Type: " + type;
+        "\n Manufacturer: " + manufacturer +
+        "\n Type: " + type;
   }
 }

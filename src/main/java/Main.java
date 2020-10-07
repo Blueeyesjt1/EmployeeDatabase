@@ -26,5 +26,6 @@ public class Main extends Application {
     primaryStage.setTitle("Product Viewer");
     primaryStage.setScene(scene);
     primaryStage.show();
+
   }
 }
