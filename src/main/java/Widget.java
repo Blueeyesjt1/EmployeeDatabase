@@ -1,6 +1,6 @@
 public class Widget extends Product {
 
   Widget(String name, String manufacturer, ItemType type) {
-    super(name, manufacturer, type.code);
+    super(name, manufacturer, type);
   }
 }

@@ -9,10 +9,6 @@ public abstract class Product {
     this.type = type;
     this.manufacturer = manufacturer;
     this.name = name;
-
-    System.out.println("Name: " + name +
-        "\n Manufacturer: " + manufacturer +
-        "\n Type: " + type);
   }
 
   int getId() {
