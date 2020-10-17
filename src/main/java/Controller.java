@@ -7,6 +7,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Date;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -31,8 +32,11 @@ public class Controller {
   @FXML   //Quantity box
   private ComboBox<String> combo_quantity;
 
+  @FXML   //Text log on last page
+  private TextArea textLog;
+
   /**
-   * Initialized method used to set the quantity combobox values only (for now)
+   * Initialized method used at program startup
    */
   public void initialize() {
 
@@ -41,6 +45,50 @@ public class Controller {
     System.out.println("Launched program");
     populateProductLineTabs();  //Populates item type dropdown
     populateItemQuantity(); //Populates quantity dropdown
+    testMultimedia(); //Testing
+    testProductionRecord(); //Testing text log on last page
+  }
+
+  public void testMultimedia() {
+    AudioPlayer newAudioProduct = new AudioPlayer("DP-X1A", "Onkyo",
+        "DSD/FLAC/ALAC/WAV/AIFF/MQA/Ogg-Vorbis/MP3/AAC", "M3U/PLS/WPL");
+    Screen newScreen = new Screen("720x480", 40, 22);
+    MoviePlayer newMovieProduct = new MoviePlayer("DBPOWER MK101", "OracleProduction", newScreen,
+        MonitorType.LCD);
+    ArrayList<MultimediaControl> productList = new ArrayList<MultimediaControl>();
+    productList.add(newAudioProduct);
+    productList.add(newMovieProduct);
+    for (MultimediaControl p : productList) {
+      System.out.println(p);
+      p.Play();
+      p.Stop();
+      p.Next();
+      p.Previous();
+    }
+  }
+
+  public void testProductionRecord() {
+    // test constructor used when creating production records from user interface
+    Integer numProduced = 3;  // this will come from the combobox in the UI
+
+    for (int productionRunProduct = 0; productionRunProduct < numProduced; productionRunProduct++) {
+      ProductionRecord pr = new ProductionRecord(0);
+      System.out.println(pr.toString());
+    }
+
+    // test constructor used when creating production records from reading database
+    ProductionRecord pr = new ProductionRecord(0, 3, "1", new Date());
+
+    textLog.setText(textLog.getText() + pr.toString());
+    pr.setProductionNumber(1);
+    textLog.setText(textLog.getText() + "\n" + pr.getProductionNumber());
+    pr.setProductID(4);
+    textLog.setText(textLog.getText() + "\n" + pr.getProductID());
+    pr.setSerialnumber("2");
+    textLog.setText(textLog.getText() + "\n" + pr.getSerialnumber());
+    pr.setDateProduced(new Date());
+    textLog.setText(textLog.getText() + "\n" + pr.getDateProduced());
+
   }
 
   /**
