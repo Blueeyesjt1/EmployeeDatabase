@@ -1,4 +1,4 @@
-public abstract class Product {
+public class Product {
 
   protected int id;
   protected ItemType type;
@@ -37,4 +37,14 @@ public abstract class Product {
         "Manufacturer: " + manufacturer + "\n" +
         "Type: " + type;
   }
+
+  public static class Widget extends Product {
+    Widget(String name, String manufacturer, ItemType type) {
+      super(name, manufacturer, type);
+    }
+  }
+
 }
+
+
+

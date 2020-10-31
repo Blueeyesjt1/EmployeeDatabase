@@ -1,6 +1,7 @@
 import java.util.Date;
 
 public class ProductionRecord {
+
   int productionNumber;
   int productID;
   String serialnumber;
@@ -13,12 +14,21 @@ public class ProductionRecord {
     this.dateProduced = new Date();
   }
 
-  public ProductionRecord(int productionNumber, int productID, String serialnumber,
-      Date dateProduced) {
+  public ProductionRecord(int productionNumber, int productID, String serialnumber, Date dateProduced) {
     this.productionNumber = productionNumber;
     this.productID = productID;
     this.serialnumber = serialnumber;
     this.dateProduced = dateProduced;
+  }
+
+  public ProductionRecord(Product product, int quantityNum) {     //Issues 5 method
+    this.productionNumber = productionNumber;
+    this.productID = productID;
+    String serialNumEnd = "00000";
+    int serialCharLength = serialNumEnd.length() - String.valueOf(quantityNum).length();
+    String serialNum = serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);
+    this.serialnumber =  product.manufacturer.toString().substring(0,3) + product.type.code + serialNum;
+    this.dateProduced = new Date();
   }
 
   @Override
@@ -62,3 +72,5 @@ public class ProductionRecord {
     this.dateProduced = dateProduced;
   }
 }
+
+

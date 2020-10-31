@@ -3,15 +3,20 @@
   Description: Controller class that
        holds input variables and
        gateway to H2 database
-  Date: 9/18/2020
+  Date: 9/18/2020 - 10/30/2020
  */
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.sql.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 //This comment is solely for testing git-committing. Please ignore.
 
@@ -35,23 +40,62 @@ public class Controller {
   @FXML   //Text log on last page
   private TextArea textLog;
 
+  @FXML
+  private TableView<Product> productTable;
+
+  public ObservableList< Product.Widget > productLine = FXCollections.observableArrayList();
+
   /**
    * Initialized method used at program startup
    */
   public void initialize() {
 
-    Widget newProductTest = new Widget("iPod45", "Apple", ItemType.AUDIO);  //Test widget
+    //Widget newProductTest = new Widget("iPod45", "Apple", ItemType.AUDIO);  //Test widget
 
     System.out.println("Launched program");
+    tableViewSetup();
     populateProductLineTabs();  //Populates item type dropdown
     populateItemQuantity(); //Populates quantity dropdown
     testMultimedia(); //Testing
     testProductionRecord(); //Testing text log on last page
   }
 
+  /**
+   * Product button call
+   */
+  @FXML
+  void but_AddProduct(ActionEvent event) {
+
+    //Product testProduct = new Product("testName", "testManf", ItemType.valueOf(choice_Type.getValue()));
+    //productLine.add(testProduct);
+
+    /*for (Product productFound : productLine) {
+     // productTable.getColumns().add(new TableRow<>());
+    }*/
+
+    System.out.println("Product added");
+  }
+
+  public void tableViewSetup() {
+    TableColumn<Product, String> nameColumn = new TableColumn<>("Name");
+    nameColumn.setCellValueFactory(new PropertyValueFactory<>("Name"));
+    productTable.getColumns().add(nameColumn);
+
+    TableColumn<Product, String> manuColumn = new TableColumn<>("Manufacturer");
+    manuColumn.setCellValueFactory(new PropertyValueFactory<>("Manufacturer"));
+    productTable.getColumns().add(manuColumn);
+
+    TableColumn<Product, ItemType> typeColumn = new TableColumn<>("Type");
+    typeColumn.setCellValueFactory(new PropertyValueFactory<>("Type"));
+    productTable.getColumns().add(typeColumn);
+
+    productLine.add(new Product.Widget("testName", "testManf", ItemType.VISUAL));
+
+    productTable.getItems().add(productLine.get(0));
+  }
+
   public void testMultimedia() {
-    AudioPlayer newAudioProduct = new AudioPlayer("DP-X1A", "Onkyo",
-        "DSD/FLAC/ALAC/WAV/AIFF/MQA/Ogg-Vorbis/MP3/AAC", "M3U/PLS/WPL");
+    AudioPlayer newAudioProduct = new AudioPlayer("DP-X1A", "Onkyo", "DSD/FLAC/ALAC/WAV/AIFF/MQA/Ogg-Vorbis/MP3/AAC", "M3U/PLS/WPL");
     Screen newScreen = new Screen("720x480", 40, 22);
     MoviePlayer newMovieProduct = new MoviePlayer("DBPOWER MK101", "OracleProduction", newScreen,
         MonitorType.LCD);
@@ -80,24 +124,13 @@ public class Controller {
     ProductionRecord pr = new ProductionRecord(0, 3, "1", new Date());
 
     textLog.setText(textLog.getText() + pr.toString());
-    pr.setProductionNumber(1);
     textLog.setText(textLog.getText() + "\n" + pr.getProductionNumber());
-    pr.setProductID(4);
     textLog.setText(textLog.getText() + "\n" + pr.getProductID());
-    pr.setSerialnumber("2");
     textLog.setText(textLog.getText() + "\n" + pr.getSerialnumber());
-    pr.setDateProduced(new Date());
     textLog.setText(textLog.getText() + "\n" + pr.getDateProduced());
 
   }
 
-  /**
-   * Product button call
-   */
-  @FXML
-  void but_AddProduct(ActionEvent event) {
-    System.out.println("Product added");
-  }
 
   /**
    * Product record button call
