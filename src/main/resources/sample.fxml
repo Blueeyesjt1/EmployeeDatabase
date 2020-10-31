@@ -71,7 +71,7 @@
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@Style.css">
               <children>
                 <Label layoutX="12.0" layoutY="7.0" prefHeight="17.0" prefWidth="105.0" stylesheets="@Style.css" text="Products" />
-                <ListView fx:id="list_Produce" layoutX="12.0" layoutY="26.0" prefHeight="212.0" prefWidth="375.0" stylesheets="@Style.css" />
+                <ListView fx:id="list_Produce" layoutX="12.0" layoutY="26.0" opacity="0.8" prefHeight="212.0" prefWidth="375.0" stylesheets="@Style.css" />
                 <Label layoutX="224.0" layoutY="254.0" stylesheets="@Style.css" text="Choose Quantity" />
                 <ComboBox fx:id="combo_quantity" editable="true" layoutX="321.0" layoutY="250.0" prefHeight="25.0" prefWidth="67.0" promptText="combo_quantity" stylesheets="@Style.css" />
                 <Button layoutX="274.0" layoutY="288.0" mnemonicParsing="false" onAction="#but_RecordProduction" stylesheets="@Style.css" text="Record Production" />

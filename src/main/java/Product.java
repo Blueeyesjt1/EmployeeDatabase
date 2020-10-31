@@ -1,4 +1,4 @@
-public class Product {
+public abstract class Product {
 
   protected int id;
   protected ItemType type;
@@ -9,6 +9,14 @@ public class Product {
     this.type = type;
     this.manufacturer = manufacturer;
     this.name = name;
+  }
+
+  public ItemType getType() {
+    return type;
+  }
+
+  public void setType(ItemType type) {
+    this.type = type;
   }
 
   int getId() {

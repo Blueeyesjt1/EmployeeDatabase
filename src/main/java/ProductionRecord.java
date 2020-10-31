@@ -21,9 +21,10 @@ public class ProductionRecord {
     this.dateProduced = dateProduced;
   }
 
-  public ProductionRecord(Product product, int quantityNum) {     //Issues 5 method
+  public ProductionRecord(Product product, int quantityNum, int productNum) {     //Issues 5 method
     this.productionNumber = productionNumber;
     this.productID = productID;
+    this.productionNumber = productNum;
     String serialNumEnd = "00000";
     int serialCharLength = serialNumEnd.length() - String.valueOf(quantityNum).length();
     String serialNum = serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);

@@ -1,15 +1,13 @@
 /*
   Programmer Name: Jaden Williams
-  Description: Controller class that
-       holds input variables and
-       gateway to H2 database
-  Date: 9/18/2020 - 10/30/2020
+      Description: Controller class that
+                   holds input variables and
+                   gateway to H2 database
+             Date: 9/18/2020 - 10/30/2020
  */
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -29,10 +27,10 @@ public class Controller {
   private TextField txt_Manufacturer;
 
   @FXML   //Type box
-  private ChoiceBox<String> choice_Type;
+  private ChoiceBox<ItemType> choice_Type;
 
   @FXML   //Produce box //
-  private ListView<?> list_Produce;
+  private ListView<Product> list_Produce;
 
   @FXML   //Quantity box
   private ComboBox<String> combo_quantity;
@@ -43,7 +41,13 @@ public class Controller {
   @FXML
   private TableView<Product> productTable;
 
-  public ObservableList< Product.Widget > productLine = FXCollections.observableArrayList();
+  public int globalProductCount = 0;
+
+  public ObservableList<Product> productLine = FXCollections.observableArrayList();
+
+  TableColumn<Product, String> nameColumn = new TableColumn<>("Name");
+  TableColumn<Product, String> manuColumn = new TableColumn<>("Manufacturer");
+  TableColumn<Product, ItemType> typeColumn = new TableColumn<>("Type");
 
   /**
    * Initialized method used at program startup
@@ -53,11 +57,12 @@ public class Controller {
     //Widget newProductTest = new Widget("iPod45", "Apple", ItemType.AUDIO);  //Test widget
 
     System.out.println("Launched program");
-    tableViewSetup();
+    LoadDatabase();
+    tableViewSetup();  //Sets up table structure
     populateProductLineTabs();  //Populates item type dropdown
     populateItemQuantity(); //Populates quantity dropdown
-    testMultimedia(); //Testing
-    testProductionRecord(); //Testing text log on last page
+    //testMultimedia(); //Testing
+    //testProductionRecord(); //Testing text log on last page
   }
 
   /**
@@ -66,32 +71,163 @@ public class Controller {
   @FXML
   void but_AddProduct(ActionEvent event) {
 
-    //Product testProduct = new Product("testName", "testManf", ItemType.valueOf(choice_Type.getValue()));
-    //productLine.add(testProduct);
+    productLine.add(new Widget(txt_ProductName.getText(), txt_Manufacturer.getText(), choice_Type.getValue())); //Adding test product in observable list
 
-    /*for (Product productFound : productLine) {
-     // productTable.getColumns().add(new TableRow<>());
-    }*/
+    productTable.setItems(productLine);     //Adds product to table
+    list_Produce.setItems(productLine);     //Adds product to produce list
+
+    AddToDatabase();
 
     System.out.println("Product added");
   }
 
   public void tableViewSetup() {
-    TableColumn<Product, String> nameColumn = new TableColumn<>("Name");
     nameColumn.setCellValueFactory(new PropertyValueFactory<>("Name"));
     productTable.getColumns().add(nameColumn);
 
-    TableColumn<Product, String> manuColumn = new TableColumn<>("Manufacturer");
     manuColumn.setCellValueFactory(new PropertyValueFactory<>("Manufacturer"));
     productTable.getColumns().add(manuColumn);
 
-    TableColumn<Product, ItemType> typeColumn = new TableColumn<>("Type");
     typeColumn.setCellValueFactory(new PropertyValueFactory<>("Type"));
     productTable.getColumns().add(typeColumn);
 
-    productLine.add(new Product.Widget("testName", "testManf", ItemType.VISUAL));
+/*
+    productTable.getItems().add(new Product(productLine.get(0).name, productLine.get(0).manufacturer, ItemType.VISUAL_MOBILE));*/
 
-    productTable.getItems().add(productLine.get(0));
+  }
+
+  public void AddToDatabase() {
+    final String JDBC_DRIVER = "org.h2.Driver";
+    final String DB_URL = "jdbc:h2:./res/HR";
+
+    //  Database credentials
+    final String USER = "";
+    final String PASS = "";
+    Connection conn = null; //Temporary
+    PreparedStatement stmt = null; //Temporary
+
+    try {
+      // STEP 1: Register JDBC driver
+      Class.forName(JDBC_DRIVER);
+
+      //STEP 2: Open a connection
+      conn = DriverManager.getConnection(DB_URL, USER, PASS);   //Security bug - Temporary placeholders, will be modified in future.
+
+      String sqlProductName = txt_ProductName.getText();
+      String sqlManufName = txt_Manufacturer.getText();
+      ItemType sqlItemType = choice_Type.getValue();
+
+      stmt = conn.prepareStatement("INSERT INTO Product(type, manufacturer, name) VALUES (?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+      stmt.setString(1, sqlItemType.toString());
+      stmt.setString(2, sqlManufName);
+      stmt.setString(3, sqlProductName);
+
+      stmt.executeUpdate();
+
+      /*String sql = "SELECT EMAIL, FIRST_NAME, LAST_NAME " + "FROM EMPLOYEES "
+
+      ResultSet rs = stmt.executeQuery(sql);  //Temporary database testing. Will be modified in the future.
+      rs.next();
+      String empEmail = rs.getString(1);
+      String empFirstName = rs.getString(2);
+      String empLastName = rs.getString(3);
+      System.out.println(empFirstName + " " + empLastName + " " + empEmail);
+
+      empOutput.setText("Employee name is " + empFirstName + " " + empLastName + ", email is " + empEmail);
+      STEP 4: Clean-up environment*/
+
+      stmt.close();
+      conn.close();
+    } catch (ClassNotFoundException e) {
+      e.printStackTrace();
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+  }
+
+  public void LoadDatabase() {
+    final String JDBC_DRIVER = "org.h2.Driver";
+    final String DB_URL = "jdbc:h2:./res/HR";
+
+    //  Database credentials
+    final String USER = "";
+    final String PASS = "";
+    Connection conn = null; //Temporary
+    Statement stmt = null; //Temporary
+
+    try {
+      // STEP 1: Register JDBC driver
+      Class.forName(JDBC_DRIVER);
+
+      //STEP 2: Open a connection
+      conn = DriverManager.getConnection(DB_URL, USER, PASS);   //Security bug - Temporary placeholders, will be modified in future.
+
+      stmt = conn.createStatement();
+      ResultSet rs = stmt.executeQuery("SELECT * FROM PRODUCT");  //Temporary database testing. Will be modified in the future.
+
+      while(rs.next()) {
+        String prodName = rs.getString("NAME");
+        String prodManu = rs.getString("MANUFACTURER");
+        ItemType prodType = ItemType.valueOf(rs.getString("TYPE"));
+
+        productLine.add(new Widget(prodName, prodManu, prodType)); //Adding test product in observable list
+      }
+      productTable.setItems(productLine);
+      list_Produce.setItems(productLine);
+
+      stmt.close();     //Close
+      conn.close();     //Close
+    } catch (ClassNotFoundException e) {
+      e.printStackTrace();
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+  }
+
+  /**
+   * Product record button call
+   */
+  @FXML
+  void but_RecordProduction(ActionEvent event) {
+    //textLog.setText(textLog.getText() + list_Produce.getSelectionModel().getSelectedItem().toString());
+
+    for(int i = 0; i < Integer.parseInt(combo_quantity.getValue()); i++) {
+      globalProductCount++;     //Counts up product count
+      textLog.setText(textLog.getText() + "\n" + new ProductionRecord(list_Produce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount));
+    }
+
+    System.out.println("Product recorded");
+  }
+
+  /**
+   * Populates quantity tab with digits 1 - 10
+   */
+  void populateItemQuantity() {
+    for (int i = 0; i < 10; i++) {
+      String number = String.valueOf(i + 1);
+      combo_quantity.getItems().add(i, number);
+    }
+    combo_quantity.setEditable(true);
+    combo_quantity.getSelectionModel().selectFirst();
+  }
+
+  /**
+   * Populates all enum item types inside the itemType dropdown
+   */
+  void populateProductLineTabs() {
+    ArrayList<ItemType> typeNames = new ArrayList<ItemType>();
+
+    for (ItemType typeValue : ItemType.values()) {
+      typeNames.add(typeValue);
+    }
+    System.out.println("type array size = " + typeNames.size());
+
+    for (int i = 0; i < typeNames.size(); i++) {
+      choice_Type.getItems().add(i, typeNames.get(i));
+    }
+    choice_Type.getSelectionModel().selectFirst();
   }
 
   public void testMultimedia() {
@@ -129,94 +265,6 @@ public class Controller {
     textLog.setText(textLog.getText() + "\n" + pr.getSerialnumber());
     textLog.setText(textLog.getText() + "\n" + pr.getDateProduced());
 
-  }
-
-
-  /**
-   * Product record button call
-   */
-  @FXML
-  void but_RecordProduction(ActionEvent event) {
-    System.out.println("Product recorded");
-  }
-
-  /**
-   * Calls and grabs data from database
-   */
-  public void connectDatabase() {
-    final String JDBC_DRIVER = "org.h2.Driver";
-    final String DB_URL = "jdbc:h2:./res/HR";
-
-    //  Database credentials
-    final String USER = "";
-    final String PASS = "";
-    Connection conn = null; //Temporary
-    Statement stmt = null; //Temporary
-
-    try {
-      // STEP 1: Register JDBC driver
-      Class.forName(JDBC_DRIVER);
-
-      //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER,
-          PASS);   //Security bug - Temporary placeholders, will be modified in future.
-
-      //STEP 3: Execute a query
-      stmt = conn.createStatement();  //Temporary database testing. Will be modified in the future.
-
-      //String empIDString = txtEmpID.getText();
-
-      //String sql = "SELECT EMAIL, FIRST_NAME, LAST_NAME " + "FROM EMPLOYEES "
-      //    + "WHERE EMPLOYEE_ID = " /*+ empIDString*/;
-
-      //ResultSet rs = stmt.executeQuery(sql);  //Temporary database testing. Will be modified in the future.
-      //rs.next();
-      //String empEmail = rs.getString(1);
-      //String empFirstName = rs.getString(2);
-      //String empLastName = rs.getString(3);
-      //System.out.println(empFirstName + " " + empLastName + " " + empEmail);
-
-      //empOutput.setText("Employee name is " + empFirstName + " " + empLastName + ", email is " + empEmail);
-
-      // STEP 4: Clean-up environment
-      stmt.close();
-      conn.close();
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }
-  }
-
-  /**
-   * Populates quantity tab with digits 1 - 10
-   */
-  void populateItemQuantity() {
-    for (int i = 0; i < 10; i++) {
-      String number = String.valueOf(i + 1);
-      combo_quantity.getItems().add(i, number);
-    }
-    combo_quantity.setEditable(true);
-    combo_quantity.getSelectionModel().selectFirst();
-  }
-
-
-  /**
-   * Populates all enum item types inside the itemType dropdown
-   */
-  void populateProductLineTabs() {
-    ArrayList<ItemType> typeNames = new ArrayList<ItemType>();
-
-    for (ItemType typeValue : ItemType.values()) {
-      typeNames.add(typeValue);
-    }
-    System.out.println("type array size = " + typeNames.size());
-
-    for (int i = 0; i < typeNames.size(); i++) {
-      choice_Type.getItems().add(i, typeNames.get(i).toString());
-    }
-    choice_Type.getSelectionModel().selectFirst();
   }
 
 }

@@ -27,14 +27,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ItemType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ItemType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ProductionRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ProductionRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Widget.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Widget.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/HR.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/HR.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ItemType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProductionRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProductionRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Widget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +293,7 @@
       <workItem from="1603547464965" duration="689000" />
       <workItem from="1603901955668" duration="6031000" />
       <workItem from="1603918314826" duration="628000" />
-      <workItem from="1604100161817" duration="8710000" />
+      <workItem from="1604100161817" duration="24857000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -463,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603547753862</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Basic update 9:48 10/30/2020">
+      <created>1604108921937</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1604108921937</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +535,8 @@
     <MESSAGE value="Issue 2 updates version 2" />
     <MESSAGE value="Issue 4 update" />
     <MESSAGE value="Issue 4 final push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Issue 4 final push" />
+    <MESSAGE value="Basic update 9:48 10/30/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic update 9:48 10/30/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="907" y="379" key="#Inspections" timestamp="1604102649772">
@@ -540,10 +555,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="878" y="231" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1602392065361" />
-    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1604101476603">
+    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser" timestamp="1604157046158">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604101476603" />
+    <state x="1044" y="402" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604157046158" />
     <state x="4623" y="299" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1602945495012" />
     <state x="910" y="390" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1600527251780">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -585,30 +600,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="406" key="Github.UntrackedFilesDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600448266442" />
-    <state width="2517" height="421" key="GridCell.Tab.0.bottom" timestamp="1604108779319">
+    <state width="2517" height="421" key="GridCell.Tab.0.bottom" timestamp="1604173886313">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="421" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604108779319" />
+    <state width="2517" height="421" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604173886313" />
     <state width="1877" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1603917276085" />
-    <state width="2517" height="421" key="GridCell.Tab.0.center" timestamp="1604108779319">
+    <state width="2517" height="421" key="GridCell.Tab.0.center" timestamp="1604173886313">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="421" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604108779319" />
+    <state width="2517" height="421" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604173886313" />
     <state width="1877" height="297" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1603917276085" />
-    <state width="2517" height="421" key="GridCell.Tab.0.left" timestamp="1604108779319">
+    <state width="2517" height="421" key="GridCell.Tab.0.left" timestamp="1604173886313">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="421" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604108779319" />
+    <state width="2517" height="421" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604173886313" />
     <state width="1877" height="297" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1603917276085" />
-    <state width="2517" height="421" key="GridCell.Tab.0.right" timestamp="1604108779319">
+    <state width="2517" height="421" key="GridCell.Tab.0.right" timestamp="1604173886313">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="421" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604108779319" />
+    <state width="2517" height="421" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604173886313" />
     <state width="1877" height="297" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1603917276085" />
-    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1600451585846">
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1604157777966">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600451585846" />
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604157777966" />
     <state x="249" y="123" key="MergeDialog" timestamp="1600475674541">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -618,10 +633,10 @@
     </state>
     <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601498328591" />
     <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1603547756395">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604108927416">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1603547756395" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604108927416" />
     <state x="4495" y="322" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462266143" />
     <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600452528571">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -631,6 +646,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="861" y="356" key="com.intellij.database.dbimport.ImportDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1600295814713" />
+    <state x="1011" y="506" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1604166736098">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="506" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604166736098" />
     <state x="1181" y="647" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1600295945318">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
