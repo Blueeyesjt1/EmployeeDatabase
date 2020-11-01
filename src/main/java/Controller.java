@@ -14,8 +14,6 @@ import javafx.scene.control.*;
 import java.sql.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-//This comment is solely for testing git-committing. Please ignore.
-
 /**
  * Class that holds most methods pertaining to UI buttons
  * and functions
@@ -213,8 +211,7 @@ public class Controller {
 
     for (int i = 0; i < Integer.parseInt(combo_quantity.getValue()); i++) {
       globalProductCount++;     //Counts up product count
-      textLog.setText(textLog.getText() + "\n" + new ProductionRecord(
-          list_Produce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount));
+      textLog.setText(textLog.getText() + "\n" + new ProductionRecord(list_Produce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount));
     }
 
     System.out.println("Product recorded");

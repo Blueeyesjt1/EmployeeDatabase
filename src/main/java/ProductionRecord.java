@@ -14,6 +14,10 @@ public class ProductionRecord {
   String serialnumber;
   Date dateProduced;
 
+  /**
+   * Constructor of basic production record with a product ID
+   * @param productID holds product ID
+   */
   public ProductionRecord(int productID) {
     this.productID = productID;
     this.productionNumber = 0;
@@ -21,8 +25,14 @@ public class ProductionRecord {
     this.dateProduced = new Date();
   }
 
-  public ProductionRecord(int productionNumber, int productID, String serialnumber,
-      Date dateProduced) {
+  /**
+   * Constructor of basic production record with a product #, ID, serial #, and date
+   * @param productionNumber holds product Number
+   * @param productID holds product ID
+   * @param serialnumber holds serial number fro product
+   * @param dateProduced holds date of Product publishing
+   */
+  public ProductionRecord(int productionNumber, int productID, String serialnumber, Date dateProduced) {
     this.productionNumber = productionNumber;
     this.productID = productID;
     this.serialnumber = serialnumber;
@@ -33,12 +43,11 @@ public class ProductionRecord {
     this.productionNumber = productionNumber;
     this.productID = productID;
     this.productionNumber = productNum;
+    this.productID = productNum + quantityNum;     //Basic ID creator - Will be more complex in future
     String serialNumEnd = "00000";
     int serialCharLength = serialNumEnd.length() - String.valueOf(quantityNum).length();
-    String serialNum =
-        serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);
-    this.serialnumber =
-        product.manufacturer.toString().substring(0, 3) + product.type.code + serialNum;
+    String serialNum = serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);
+    this.serialnumber = product.manufacturer.toString().substring(0, 3) + product.type.code + serialNum;
     this.dateProduced = new Date();
   }
 
