@@ -1,3 +1,9 @@
+/**
+ * Programmer Name: Jaden Williams
+ * Description: Screen that implements screenSpec
+ * Date: 9/18/2020 - 10/31/2020
+ */
+
 public class Screen implements ScreenSpec {
 
   String resolution;

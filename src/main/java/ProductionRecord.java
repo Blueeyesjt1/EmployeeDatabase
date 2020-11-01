@@ -1,3 +1,10 @@
+/**
+ * Programmer Name: Jaden Williams
+ * Description: Controller class that holds input variables and
+ * gateway to H2 database
+ * Date: 9/18/2020 - 10/31/2020
+ */
+
 import java.util.Date;
 
 public class ProductionRecord {
@@ -14,7 +21,8 @@ public class ProductionRecord {
     this.dateProduced = new Date();
   }
 
-  public ProductionRecord(int productionNumber, int productID, String serialnumber, Date dateProduced) {
+  public ProductionRecord(int productionNumber, int productID, String serialnumber,
+      Date dateProduced) {
     this.productionNumber = productionNumber;
     this.productID = productID;
     this.serialnumber = serialnumber;
@@ -27,8 +35,10 @@ public class ProductionRecord {
     this.productionNumber = productNum;
     String serialNumEnd = "00000";
     int serialCharLength = serialNumEnd.length() - String.valueOf(quantityNum).length();
-    String serialNum = serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);
-    this.serialnumber =  product.manufacturer.toString().substring(0,3) + product.type.code + serialNum;
+    String serialNum =
+        serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);
+    this.serialnumber =
+        product.manufacturer.toString().substring(0, 3) + product.type.code + serialNum;
     this.dateProduced = new Date();
   }
 
@@ -36,9 +46,9 @@ public class ProductionRecord {
   public String toString() {
     return
         "Prod. Num: " + productionNumber + " " +
-        "Product ID: " + productID + " " +
-        "Serial Num: " + serialnumber + " " +
-        "Date: " + dateProduced;
+            "Product ID: " + productID + " " +
+            "Serial Num: " + serialnumber + " " +
+            "Date: " + dateProduced;
   }
 
   public int getProductionNumber() {

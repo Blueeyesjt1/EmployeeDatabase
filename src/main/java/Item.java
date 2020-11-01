@@ -1,3 +1,10 @@
+/**
+ * Programmer Name: Jaden Williams
+ * Description: Item interface that holds ID, name,
+ * and manufacturer
+ * Date: 9/18/2020 - 10/31/2020
+ */
+
 public interface Item {
 
   int getID();
