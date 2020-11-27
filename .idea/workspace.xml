@@ -23,33 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="&quot;SpotBugs&quot; bug-checking completed.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/storage_v2/_src_/database/HR.CgkAAA/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/storage_v2/_src_/database/HR.CgkAAA/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/storage_v2/_src_/database/HR.CgkAAA/schema/PUBLIC.aaZQjQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76b3e725-3f03-40a6-892e-6a9fd1dc8ac4/storage_v2/_src_/database/HR.CgkAAA/schema/PUBLIC.aaZQjQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ItemType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ItemType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MonitorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MonitorType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MoviePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MoviePlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ProductionRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ProductionRecord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Screen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Widget.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Widget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/HR.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/HR.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProductionRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProductionRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +283,7 @@
       <workItem from="1606016916768" duration="119000" />
       <workItem from="1606503734836" duration="8433000" />
       <workItem from="1606514880843" duration="957000" />
-      <workItem from="1606515879901" duration="1618000" />
+      <workItem from="1606515879901" duration="2289000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -513,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604200283247</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Release update 1 11-27-2020 5:52pm">
+      <created>1606517540639</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1606517540639</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +557,8 @@
     <MESSAGE value="Beta update 1 &gt;&gt; 3:53pm 10/31/2020" />
     <MESSAGE value="Beta Comment overhaul 10/31/2020" />
     <MESSAGE value="Beta Comment overhaul 2 10/31/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beta Comment overhaul 2 10/31/2020" />
+    <MESSAGE value="Release update 1 11-27-2020 5:52pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release update 1 11-27-2020 5:52pm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="907" y="379" key="#Inspections" timestamp="1604102649772">
@@ -676,10 +659,10 @@
     </state>
     <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1601498328591" />
     <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1604200285340">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1606517549538">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1604200285340" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1606517549538" />
     <state x="4495" y="322" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462266143" />
     <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600452528571">
       <screen x="0" y="0" width="2560" height="1400" />
