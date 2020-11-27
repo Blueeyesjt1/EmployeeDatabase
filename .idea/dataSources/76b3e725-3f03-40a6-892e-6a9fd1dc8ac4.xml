@@ -287,7 +287,7 @@
       <ObjectId>3</ObjectId>
     </table>
     <table id="199" parent="4" name="PRODUCTIONRECORD">
-      <ObjectId>8</ObjectId>
+      <ObjectId>10</ObjectId>
     </table>
     <column id="200" parent="163" name="CATALOG_NAME">
       <Position>1</Position>
@@ -1574,6 +1574,10 @@
     <column id="518" parent="199" name="DATE_PRODUCED">
       <Position>4</Position>
       <DataType>DATETIME|0s</DataType>
+    </column>
+    <column id="519" parent="199" name="USERNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR|0s</DataType>
     </column>
   </database-model>
 </dataSource>

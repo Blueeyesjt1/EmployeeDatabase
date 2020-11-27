@@ -5,7 +5,7 @@
  * Date: 9/18/2020 - 10/31/2020
  */
 
-import java.util.Date;
+import java.sql.*;
 
 public class ProductionRecord {
 
@@ -22,7 +22,7 @@ public class ProductionRecord {
     this.productID = productID;
     this.productionNumber = 0;
     this.serialnumber = "0";
-    this.dateProduced = new Date();
+    this.dateProduced = new Date(System.currentTimeMillis());
   }
 
   /**
@@ -41,14 +41,13 @@ public class ProductionRecord {
 
   public ProductionRecord(Product product, int quantityNum, int productNum) {     //Issues 5 method
     this.productionNumber = productionNumber;
-    this.productID = productID;
+    this.productID = productID + quantityNum;
     this.productionNumber = productNum;
-    this.productID = productNum + quantityNum;     //Basic ID creator - Will be more complex in future
     String serialNumEnd = "00000";
-    int serialCharLength = serialNumEnd.length() - String.valueOf(quantityNum).length();
-    String serialNum = serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(quantityNum);
+    int serialCharLength = serialNumEnd.length() - String.valueOf(this.productionNumber + this.productID).length();
+    String serialNum = serialNumEnd.substring(0, serialCharLength) + "" + String.valueOf(this.productionNumber + this.productID);
     this.serialnumber = product.manufacturer.toString().substring(0, 3) + product.type.code + serialNum;
-    this.dateProduced = new Date();
+    this.dateProduced = new Date(System.currentTimeMillis());
   }
 
   @Override

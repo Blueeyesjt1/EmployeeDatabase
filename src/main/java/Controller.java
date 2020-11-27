@@ -1,11 +1,9 @@
 /**
- * Programmer Name: Jaden Williams
- * Description: Sample class that holds UI information
- * Date: 9/18/2020 - 10/31/2020
+ * Programmer Name: Jaden Williams Description: Sample class that holds UI information Date:
+ * 9/18/2020 - 10/31/2020
  */
 
 import java.util.ArrayList;
-import java.util.Date;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,8 +13,7 @@ import java.sql.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
- * Class that holds most methods pertaining to UI buttons
- * and functions
+ * Class that holds most methods pertaining to UI buttons and functions
  */
 public class Controller {
 
@@ -41,6 +38,12 @@ public class Controller {
   @FXML
   private TableView< Product > productTable;
 
+  @FXML   //Text field for employee name
+  private TextField txt_EmployeeName;
+
+  @FXML   //Text field for employee password
+  private TextField txt_EmployeePass;
+
   public int globalProductCount = 0;
 
   public ObservableList< Product > productLine = FXCollections.observableArrayList();
@@ -49,15 +52,20 @@ public class Controller {
   TableColumn< Product, String > manuColumn = new TableColumn<>("Manufacturer");
   TableColumn< Product, ItemType > typeColumn = new TableColumn<>("Type");
 
+  public Employee mainEmployee;
+
   /**
    * Initialized method used at program startup
    */
   public void initialize() {
 
+    Employee emp = new Employee("jaden Williams", "abEFc123!");
+
     //Widget newProductTest = new Widget("iPod45", "Apple", ItemType.AUDIO);  //Test widget
 
     System.out.println("Launched program");
-    LoadDatabase();
+    LoadDatabaseProducts();
+    LoadDatabaseRecords();
     tableViewSetup();  //Sets up table structure
     populateProductLineTabs();  //Populates item type dropdown
     populateItemQuantity(); //Populates quantity dropdown
@@ -77,9 +85,25 @@ public class Controller {
     productTable.setItems(productLine);     //Adds product to table
     list_Produce.setItems(productLine);     //Adds product to produce list
 
-    AddToDatabase();
+    AddToDatabaseProduct();
 
     System.out.println("Product added");
+  }
+
+  /**
+   * @param event used when "login" button is pressed
+   */
+  @FXML
+  public void but_Login(ActionEvent event) {
+
+    Employee workingEmployee = new Employee(txt_EmployeeName.getText(),
+        txt_EmployeePass.getText());     //Attempts login
+
+    textLog.setText(
+        textLog.getText() + "\n" + "Employee login: " + "\n     " + workingEmployee.email
+            + "\n     " + workingEmployee.username);     //Logs login
+
+    mainEmployee = workingEmployee;     //Set attempted employee login to global employee logged in at the moment.
   }
 
   /**
@@ -103,7 +127,7 @@ public class Controller {
   /**
    * When "add product" button is pressed, the input fields get sent to database to be stored
    */
-  public void AddToDatabase() {
+  public void AddToDatabaseProduct() {
     final String JDBC_DRIVER = "org.h2.Driver";
     final String DB_URL = "jdbc:h2:./res/HR";
 
@@ -119,7 +143,7 @@ public class Controller {
 
       //STEP 2: Open a connection
       conn = DriverManager.getConnection(DB_URL, USER,
-          PASS);   //Security bug - Temporary placeholders, will be modified in future.
+          PASS);
 
       String sqlProductName = txt_ProductName.getText();
       String sqlManufName = txt_Manufacturer.getText();
@@ -133,17 +157,44 @@ public class Controller {
 
       stmt.executeUpdate();
 
-      /*String sql = "SELECT EMAIL, FIRST_NAME, LAST_NAME " + "FROM EMPLOYEES "
+      stmt.close();
+      conn.close();
+    } catch (ClassNotFoundException e) {
+      e.printStackTrace();
 
-      ResultSet rs = stmt.executeQuery(sql);  //Temporary database testing. Will be modified in the future.
-      rs.next();
-      String empEmail = rs.getString(1);
-      String empFirstName = rs.getString(2);
-      String empLastName = rs.getString(3);
-      System.out.println(empFirstName + " " + empLastName + " " + empEmail);
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+  }
 
-      empOutput.setText("Employee name is " + empFirstName + " " + empLastName + ", email is " + empEmail);
-      STEP 4: Clean-up environment*/
+  public void AddToDatabaseRecord(ProductionRecord prodRec, String empUsername) {
+    final String JDBC_DRIVER = "org.h2.Driver";
+    final String DB_URL = "jdbc:h2:./res/HR";
+
+    //  Database credentials
+    final String USER = "";
+    final String PASS = "";
+    Connection conn = null; //Temporary
+    PreparedStatement stmt = null; //Temporary
+
+    try {
+      // STEP 1: Register JDBC driver
+      Class.forName(JDBC_DRIVER);
+
+      //STEP 2: Open a connection
+      conn = DriverManager.getConnection(DB_URL, USER,
+          PASS);
+
+      stmt = conn.prepareStatement(
+          "INSERT INTO Productionrecord(production_num, product_id, serial_num, date_produced, username) VALUES (?, ?, ?, ?, ?)",
+          Statement.RETURN_GENERATED_KEYS);
+      stmt.setInt(1, prodRec.getProductionNumber());
+      stmt.setInt(2, prodRec.getProductID());
+      stmt.setString(3, prodRec.serialnumber);
+      stmt.setDate(4, prodRec.getDateProduced());
+      stmt.setString(5, empUsername);
+
+      stmt.executeUpdate();
 
       stmt.close();
       conn.close();
@@ -158,7 +209,7 @@ public class Controller {
   /**
    * Loads database to fill table at start of program initialization
    */
-  public void LoadDatabase() {
+  public void LoadDatabaseProducts() {
     final String JDBC_DRIVER = "org.h2.Driver";
     final String DB_URL = "jdbc:h2:./res/HR";
 
@@ -201,20 +252,65 @@ public class Controller {
     }
   }
 
+  public void LoadDatabaseRecords() {
+    final String JDBC_DRIVER = "org.h2.Driver";
+    final String DB_URL = "jdbc:h2:./res/HR";
+
+    //  Database credentials
+    final String USER = "";
+    final String PASS = "";
+    Connection conn = null; //Temporary
+    Statement stmt = null; //Temporary
+
+    try {
+      // STEP 1: Register JDBC driver
+      Class.forName(JDBC_DRIVER);
+
+      //STEP 2: Open a connection
+      conn = DriverManager.getConnection(DB_URL, USER,
+          PASS);   //Security bug - Temporary placeholders, will be modified in future.
+
+      stmt = conn.createStatement();
+      ResultSet rs = stmt.executeQuery(
+          "SELECT * FROM PRODUCTIONRECORD");  //Temporary database testing. Will be modified in the future.
+
+      while (rs.next()) {
+        String prodNum = rs.getString("PRODUCTION_NUM");
+        String prodID = rs.getString("PRODUCT_ID");
+        String prodSerialNum = rs.getString("SERIAL_NUM").toString();
+        String prodDate = rs.getString("DATE_PRODUCED").toString();
+        textLog.setText(textLog.getText() + "\n" + "Prod. Num: " + prodNum + " Product ID: " + prodID + " Serial Num: " +  prodSerialNum + " " + prodDate);
+      }
+      productTable.setItems(productLine);
+      list_Produce.setItems(productLine);
+
+      stmt.close();     //Close
+      conn.close();     //Close
+    } catch (ClassNotFoundException e) {
+      e.printStackTrace();
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+  }
+
   /**
    * On record button press on produce tab, data gets sent to log tab
+   *
    * @param event button press for recording production
    */
   @FXML
   void but_RecordProduction(ActionEvent event) {
-    //textLog.setText(textLog.getText() + list_Produce.getSelectionModel().getSelectedItem().toString());
-
     for (int i = 0; i < Integer.parseInt(combo_quantity.getValue()); i++) {
       globalProductCount++;     //Counts up product count
-      textLog.setText(textLog.getText() + "\n" + new ProductionRecord(list_Produce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount));
+      textLog.setText(textLog.getText() + "\n" + new ProductionRecord(
+          list_Produce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount)
+          + " " + mainEmployee.username);
+      AddToDatabaseRecord(
+          new ProductionRecord(list_Produce.getSelectionModel().getSelectedItem(), i + 1,
+              globalProductCount), mainEmployee.username);
     }
 
-    System.out.println("Product recorded");
   }
 
   /**
@@ -278,9 +374,8 @@ public class Controller {
       ProductionRecord pr = new ProductionRecord(0);
       System.out.println(pr.toString());
     }
-
-    // test constructor used when creating production records from reading database
-    ProductionRecord pr = new ProductionRecord(0, 3, "1", new Date());
+// test constructor used when creating production records from reading database
+    ProductionRecord pr = new ProductionRecord(0, 3, "1", new Date(System.currentTimeMillis()));
 
     textLog.setText(textLog.getText() + pr.toString());
     textLog.setText(textLog.getText() + "\n" + pr.getProductionNumber());
