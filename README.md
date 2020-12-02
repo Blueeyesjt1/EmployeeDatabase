@@ -1,11 +1,11 @@
 # Product Program
 
 <b>Websites used:</b>
-    https://github.com/Blueeyesjt1/gradleDataBaseFX
-    https://sites.google.com/site/profvanselow/course/cop-3003
-    https://github.com/google/styleguide
-    https://www.codota.com/code/java
-    https://www.javatpoint.com
+    https://github.com/Blueeyesjt1/gradleDataBaseFX ,
+    https://sites.google.com/site/profvanselow/course/cop-3003 ,
+    https://github.com/google/styleguide ,
+    https://www.codota.com/code/java ,
+    https://www.javatpoint.com ,
     https://docs.oracle.com/en/java/
 
 <b>Updates:</b>
