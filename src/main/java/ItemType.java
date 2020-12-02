@@ -1,8 +1,8 @@
 /**
- Programmer Name: Jaden Williams
+ Programmer Name: Jaden Williams.
  Description: ItemType enum defines types to choose
- when creating product
- Date: 9/18/2020 - 10/31/2020
+ when creating product.
+ Date: 9/18/2020 - 10/31/2020.
  */
 
 public enum ItemType {
@@ -12,15 +12,15 @@ public enum ItemType {
   public String code;
 
   /**
-   * Used to get code for item type
-   * @param code Holds actual code 2 character name for item type
+   * Used to get code for item type.
+   * @param code Holds actual code 2 character name for item type.
    */
   ItemType(String code) {
     this.code = code;
   }
 
   /**
-   * Returns code name that 2 characters long
+   * Returns code name that 2 characters long.
    */
   public String code() {
     return code;

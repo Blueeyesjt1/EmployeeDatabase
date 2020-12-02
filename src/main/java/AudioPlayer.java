@@ -1,7 +1,7 @@
 /**
- * Programmer Name: Jaden Williams
- * Description: Audio player that extends Product and implements
- * multimediaControl Date: 9/18/2020 - 10/31/2020
+ * Programmer Name: Jaden Williams.
+ * Description: Audio player that extends Product and implements.
+ * multimediaControl Date: 9/18/2020 - 10/31/2020.
  */
 
 public class AudioPlayer extends Product implements MultimediaControl {
@@ -11,11 +11,11 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * Audio player constructor that holds name, manufacturer, supported audio formats, and supported
-   * playlist formats
-   * @param name holds name of audio player
-   * @param manufacturer holds manufacturer/publisher name
-   * @param supportedAudioFormats holds supported audio formats
-   * @param supportedPlaylistFormats holds supported playlist formats
+   * playlist formats.
+   * @param name holds name of audio player.
+   * @param manufacturer holds manufacturer/publisher name.
+   * @param supportedAudioFormats holds supported audio formats.
+   * @param supportedPlaylistFormats holds supported playlist formats.
    */
   public AudioPlayer(String name, String manufacturer, String supportedAudioFormats,
       String supportedPlaylistFormats) {
@@ -25,41 +25,41 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
   /**
-   * Printing method to print information
+   * Printing method to print information.
    */
   public String toString() {
-    return "Name: " + name +
-        "\n Manufacturer: " + manufacturer +
-        "\n Type: " + type +
-        "\n Supported Audio Formats: " + supportedAudioFormats +
-        "\n Supported Playlist Formats: " + supportedPlaylistFormats;
+    return "Name: " + name
+        + "\n Manufacturer: " + manufacturer
+        + "\n Type: " + type
+        + "\n Supported Audio Formats: " + supportedAudioFormats
+        + "\n Supported Playlist Formats: " + supportedPlaylistFormats;
   }
 
   /**
-   * Printing method to print information
+   * Printing method to print information.
    */
-  public void Play() {
+  public void play() {
     System.out.println("Playing");
   }
 
   /**
-   * Printing method to print information
+   * Printing method to print information.
    */
-  public void Stop() {
+  public void stop() {
     System.out.println("Stopping");
   }
 
   /**
-   * Printing method to print information
+   * Printing method to print information.
    */
-  public void Previous() {
+  public void previous() {
     System.out.println("Previous");
   }
 
   /**
-   * Printing method to print information
+   * Printing method to print information.
    */
-  public void Next() {
+  public void next() {
     System.out.println("Next");
   }
 

@@ -1,7 +1,7 @@
 /**
- Programmer Name: Jaden Williams
- Description: Widget class that extends product
- Date: 9/18/2020 - 10/31/2020
+ Programmer Name: Jaden Williams.
+ Description: Widget class that extends product.
+ Date: 9/18/2020 - 10/31/2020.
  */
 
 public class Widget extends Product {

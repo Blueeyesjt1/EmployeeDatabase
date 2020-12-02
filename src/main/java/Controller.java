@@ -1,61 +1,74 @@
-/**
- * Programmer Name: Jaden Williams Description: Sample class that holds UI information Date:
- * 9/18/2020 - 10/31/2020
- */
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import java.sql.*;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
- * Class that holds most methods pertaining to UI buttons and functions
+ * Programmer Name: Jaden Williams
+ * Description: Sample class that holds UI information Date.
+ * 9/18/2020 - 10/31/2020.
  */
 public class Controller {
 
   @FXML   //Product input
-  private TextField txt_ProductName;
+  private TextField txtProductName;
 
   @FXML   //Manufacture input
-  private TextField txt_Manufacturer;
+  private TextField txtManufacturer;
 
   @FXML   //Type box
-  private ChoiceBox< ItemType > choice_Type;
+  private ChoiceBox<ItemType> choiceType;
 
   @FXML   //Produce box //
-  private ListView< Product > list_Produce;
+  private ListView<Product> listProduce;
 
   @FXML   //Quantity box
-  private ComboBox< String > combo_quantity;
+  private ComboBox<String> comboQuantity;
 
   @FXML   //Text log on last page
   private TextArea textLog;
 
   @FXML
-  private TableView< Product > productTable;
+  private TableView<Product> productTable;
 
   @FXML   //Text field for employee name
-  private TextField txt_EmployeeName;
+  private TextField txtEmployeeName;
 
   @FXML   //Text field for employee password
-  private TextField txt_EmployeePass;
+  private TextField txtEmployeePass;
 
   public int globalProductCount = 0;
 
-  public ObservableList< Product > productLine = FXCollections.observableArrayList();
+  public ObservableList<Product> productLine = FXCollections.observableArrayList();
 
-  TableColumn< Product, String > nameColumn = new TableColumn<>("Name");
-  TableColumn< Product, String > manuColumn = new TableColumn<>("Manufacturer");
-  TableColumn< Product, ItemType > typeColumn = new TableColumn<>("Type");
+  TableColumn<Product, String> nameColumn = new TableColumn<>("Name");
+  TableColumn<Product, String> manuColumn = new TableColumn<>("Manufacturer");
+  TableColumn<Product, ItemType> typeColumn = new TableColumn<>("Type");
 
   public Employee mainEmployee;
 
   /**
-   * Initialized method used at program startup
+   * Initialized method used at program startup.
    */
   public void initialize() {
 
@@ -64,8 +77,8 @@ public class Controller {
     //Widget newProductTest = new Widget("iPod45", "Apple", ItemType.AUDIO);  //Test widget
 
     System.out.println("Launched program");
-    LoadDatabaseProducts();
-    LoadDatabaseRecords();
+    loadDatabaseProducts();
+    loadDatabaseRecords();
     tableViewSetup();  //Sets up table structure
     populateProductLineTabs();  //Populates item type dropdown
     populateItemQuantity(); //Populates quantity dropdown
@@ -74,40 +87,41 @@ public class Controller {
   }
 
   /**
-   * @param event used when "add product" button is pressed
+   * Method called when add product button is pressed.
+   * @param event used when "add product" button is pressed.
    */
-  @FXML
-  void but_AddProduct(ActionEvent event) {
+  @FXML void but_AddProduct(ActionEvent event) {
 
-    productLine.add(new Widget(txt_ProductName.getText(), txt_Manufacturer.getText(),
-        choice_Type.getValue())); //Adding test product in observable list
+    productLine.add(new Widget(txtProductName.getText(), txtManufacturer.getText(),
+        choiceType.getValue())); //Adding test product in observable list
 
     productTable.setItems(productLine);     //Adds product to table
-    list_Produce.setItems(productLine);     //Adds product to produce list
+    listProduce.setItems(productLine);     //Adds product to produce list
 
-    AddToDatabaseProduct();
+    addToDatabaseProduct();
 
     System.out.println("Product added");
   }
 
   /**
-   * @param event used when "login" button is pressed
+   * Method called when login button is pressed to log employee into log page.
+   * @param event used when "login" button is pressed.
    */
   @FXML
   public void but_Login(ActionEvent event) {
 
-    Employee workingEmployee = new Employee(txt_EmployeeName.getText(),
-        txt_EmployeePass.getText());     //Attempts login
+    Employee workingEmployee = new Employee(txtEmployeeName.getText(),
+        txtEmployeePass.getText());     //Attempts login
 
     textLog.setText(
         textLog.getText() + "\n" + "Employee login: " + "\n     " + workingEmployee.email
             + "\n     " + workingEmployee.username);     //Logs login
 
-    mainEmployee = workingEmployee;     //Set attempted employee login to global employee logged in at the moment.
+    mainEmployee = workingEmployee;     //Set attempted employee login
   }
 
   /**
-   * Sets up the table on the products page to load proper columns
+   * Sets up the table on the products page to load proper columns.
    */
   public void tableViewSetup() {
     nameColumn.setCellValueFactory(new PropertyValueFactory<>("Name"));
@@ -118,36 +132,51 @@ public class Controller {
 
     typeColumn.setCellValueFactory(new PropertyValueFactory<>("Type"));
     productTable.getColumns().add(typeColumn);
-
-/*
-    productTable.getItems().add(new Product(productLine.get(0).name, productLine.get(0).manufacturer, ItemType.VISUAL_MOBILE));*/
-
   }
 
   /**
-   * When "add product" button is pressed, the input fields get sent to database to be stored
+   * When "add product" button is pressed, the input fields get sent to database to be stored.
    */
-  public void AddToDatabaseProduct() {
-    final String JDBC_DRIVER = "org.h2.Driver";
-    final String DB_URL = "jdbc:h2:./res/HR";
-
+  public void addToDatabaseProduct() {
     //  Database credentials
-    final String USER = "";
-    final String PASS = "";
+    String pass = "";
+
+    InputStream passPath = Controller.class.getResourceAsStream("/password.txt");
+    if (passPath == null) {
+      System.out.println("Could not find password in resources folder");
+    }
+
+    BufferedReader reader = new BufferedReader(new InputStreamReader(passPath));
+    String line = null;
+    while (true) {
+      try {
+        if (!((line = reader.readLine()) != null)) {
+          break;
+        }
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+      System.out.println(line);
+      if (line != null) {
+        pass = line;
+        System.out.println("Password login: " + line);
+        break;
+      }
+    }
     Connection conn = null; //Temporary
     PreparedStatement stmt = null; //Temporary
 
     try {
       // STEP 1: Register JDBC driver
-      Class.forName(JDBC_DRIVER);
+      Class.forName("org.h2.Driver");
 
       //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER,
-          PASS);
+      conn = DriverManager.getConnection("jdbc:h2:./res/HR", "",
+          pass);
 
-      String sqlProductName = txt_ProductName.getText();
-      String sqlManufName = txt_Manufacturer.getText();
-      ItemType sqlItemType = choice_Type.getValue();
+      final String sqlProductName = txtProductName.getText();
+      String sqlManufName = txtManufacturer.getText();
+      ItemType sqlItemType = choiceType.getValue();
 
       stmt = conn.prepareStatement("INSERT INTO Product(type, manufacturer, name) VALUES (?, ?, ?)",
           Statement.RETURN_GENERATED_KEYS);
@@ -167,26 +196,51 @@ public class Controller {
     }
   }
 
-  public void AddToDatabaseRecord(ProductionRecord prodRec, String empUsername) {
-    final String JDBC_DRIVER = "org.h2.Driver";
-    final String DB_URL = "jdbc:h2:./res/HR";
-
+  /**
+   * Method used to add logs to the database for history.
+   * @param prodRec holds production record type.
+   * @param empUsername holds username of logged-in employee.
+   */
+  public void addToDatabaseRecord(ProductionRecord prodRec, String empUsername) {
     //  Database credentials
-    final String USER = "";
-    final String PASS = "";
+    String pass = "";
+
+    InputStream passPath = Controller.class.getResourceAsStream("/password.txt");
+    if (passPath == null) {
+      System.out.println("Could not find password in resources folder");
+    }
+
+    BufferedReader reader = new BufferedReader(new InputStreamReader(passPath));
+    String line = null;
+    while (true) {
+      try {
+        if (!((line = reader.readLine()) != null)) {
+          break;
+        }
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+      System.out.println(line);
+      if (line != null) {
+        pass = line;
+        System.out.println("Password login: " + line);
+        break;
+      }
+    }
     Connection conn = null; //Temporary
     PreparedStatement stmt = null; //Temporary
 
     try {
       // STEP 1: Register JDBC driver
-      Class.forName(JDBC_DRIVER);
+      Class.forName("org.h2.Driver");
 
       //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER,
-          PASS);
+      conn = DriverManager.getConnection("jdbc:h2:./res/HR", "",
+          pass);
 
       stmt = conn.prepareStatement(
-          "INSERT INTO Productionrecord(production_num, product_id, serial_num, date_produced, username) VALUES (?, ?, ?, ?, ?)",
+          "INSERT INTO Productionrecord(production_num, product_id, "
+              + "serial_num, date_produced, username) VALUES (?, ?, ?, ?, ?)",
           Statement.RETURN_GENERATED_KEYS);
       stmt.setInt(1, prodRec.getProductionNumber());
       stmt.setInt(2, prodRec.getProductID());
@@ -207,25 +261,47 @@ public class Controller {
   }
 
   /**
-   * Loads database to fill table at start of program initialization
+   * Loads database to fill table at start of program initialization.
    */
-  public void LoadDatabaseProducts() {
-    final String JDBC_DRIVER = "org.h2.Driver";
-    final String DB_URL = "jdbc:h2:./res/HR";
+  public void loadDatabaseProducts() {
 
     //  Database credentials
-    final String USER = "";
-    final String PASS = "";
-    Connection conn = null; //Temporary
+    String pass = "";
+
+    InputStream passPath = Controller.class.getResourceAsStream("/password.txt");
+    if (passPath == null) {
+      System.out.println("Could not find password in resources folder");
+    }
+
+    BufferedReader reader = new BufferedReader(new InputStreamReader(passPath));
+    String line = null;
+    while (true) {
+      try {
+        if (!((line = reader.readLine()) != null)) {
+          break;
+        }
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+      System.out.println(line);
+      if (line != null) {
+        pass = line;
+        System.out.println("Password login: " + line);
+        break;
+      }
+    }
+
+    Connection conn;
+    //Connection conn = null; //Temporary
     Statement stmt = null; //Temporary
 
     try {
       // STEP 1: Register JDBC driver
-      Class.forName(JDBC_DRIVER);
+      Class.forName("org.h2.Driver");
 
       //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER,
-          PASS);   //Security bug - Temporary placeholders, will be modified in future.
+      conn = DriverManager.getConnection("jdbc:h2:./res/HR", "",
+          pass);   //Security bug - Temporary placeholders, will be modified in future.
 
       stmt = conn.createStatement();
       ResultSet rs = stmt.executeQuery(
@@ -240,7 +316,7 @@ public class Controller {
             .add(new Widget(prodName, prodManu, prodType)); //Adding test product in observable list
       }
       productTable.setItems(productLine);
-      list_Produce.setItems(productLine);
+      listProduce.setItems(productLine);
 
       stmt.close();     //Close
       conn.close();     //Close
@@ -252,37 +328,67 @@ public class Controller {
     }
   }
 
-  public void LoadDatabaseRecords() {
-    final String JDBC_DRIVER = "org.h2.Driver";
-    final String DB_URL = "jdbc:h2:./res/HR";
-
+  /**
+   * When called loads logs into log tab from database.
+   */
+  public void loadDatabaseRecords() {
     //  Database credentials
-    final String USER = "";
-    final String PASS = "";
-    Connection conn = null; //Temporary
+    String pass = "";
+
+    InputStream passPath = Controller.class.getResourceAsStream("/password.txt");
+    if (passPath == null) {
+      System.out.println("Could not find password in resources folder");
+    }
+
+    BufferedReader reader = new BufferedReader(new InputStreamReader(passPath));
+    String line = null;
+    while (true) {
+      try {
+        if (!((line = reader.readLine()) != null)) {
+          break;
+        }
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+      System.out.println(line);
+      if (line != null) {
+        pass = line;
+        System.out.println("Password login: " + line);
+        break;
+      }
+    }
+
+    Connection conn;
+    //Connection conn = null; //Temporary
     Statement stmt = null; //Temporary
 
     try {
       // STEP 1: Register JDBC driver
-      Class.forName(JDBC_DRIVER);
+      Class.forName("org.h2.Driver");
 
       //STEP 2: Open a connection
-      conn = DriverManager.getConnection(DB_URL, USER,
-          PASS);   //Security bug - Temporary placeholders, will be modified in future.
+      conn = DriverManager.getConnection("jdbc:h2:./res/HR", "",
+          pass);
 
       stmt = conn.createStatement();
       ResultSet rs = stmt.executeQuery(
-          "SELECT * FROM PRODUCTIONRECORD");  //Temporary database testing. Will be modified in the future.
+          "SELECT * FROM PRODUCTIONRECORD");
 
+      int tempCounter = 0;
       while (rs.next()) {
         String prodNum = rs.getString("PRODUCTION_NUM");
         String prodID = rs.getString("PRODUCT_ID");
         String prodSerialNum = rs.getString("SERIAL_NUM").toString();
         String prodDate = rs.getString("DATE_PRODUCED").toString();
-        textLog.setText(textLog.getText() + "\n" + "Prod. Num: " + prodNum + " Product ID: " + prodID + " Serial Num: " +  prodSerialNum + " " + prodDate);
+        String empUsername = rs.getString("USERNAME").toString();
+        textLog.setText(
+            textLog.getText() + "\n" + "Prod. Num: " + prodNum + " Product ID: " + prodID
+                + " Serial Num: " + prodSerialNum + " " + prodDate + " " + empUsername);
+        tempCounter++;
       }
+      globalProductCount = tempCounter;
       productTable.setItems(productLine);
-      list_Produce.setItems(productLine);
+      listProduce.setItems(productLine);
 
       stmt.close();     //Close
       conn.close();     //Close
@@ -295,41 +401,49 @@ public class Controller {
   }
 
   /**
-   * On record button press on produce tab, data gets sent to log tab
-   *
-   * @param event button press for recording production
+   * On record button press on produce tab, data gets sent to log tab.
+   * @param event button press for recording production.
    */
   @FXML
   void but_RecordProduction(ActionEvent event) {
-    for (int i = 0; i < Integer.parseInt(combo_quantity.getValue()); i++) {
+    for (int i = 0; i < Integer.parseInt(comboQuantity.getValue()); i++) {
       globalProductCount++;     //Counts up product count
-      textLog.setText(textLog.getText() + "\n" + new ProductionRecord(
-          list_Produce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount)
-          + " " + mainEmployee.username);
-      AddToDatabaseRecord(
-          new ProductionRecord(list_Produce.getSelectionModel().getSelectedItem(), i + 1,
-              globalProductCount), mainEmployee.username);
+      if (mainEmployee != null) {
+        textLog.setText(textLog.getText() + "\n" + new ProductionRecord(
+            listProduce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount)
+            + " " + mainEmployee.username);
+        addToDatabaseRecord(
+            new ProductionRecord(listProduce.getSelectionModel().getSelectedItem(), i + 1,
+                globalProductCount), mainEmployee.username);
+      } else {
+        textLog.setText(textLog.getText() + "\n" + new ProductionRecord(
+            listProduce.getSelectionModel().getSelectedItem(), i + 1, globalProductCount)
+            + " Anonymous");
+        addToDatabaseRecord(
+            new ProductionRecord(listProduce.getSelectionModel().getSelectedItem(), i + 1,
+                globalProductCount), "Anonymous");
+      }
     }
 
   }
 
   /**
-   * Populates quantity dropdown on produce tab with digits 1 - 10
+   * Populates quantity dropdown on produce tab with digits 1 - 10.
    */
   void populateItemQuantity() {
     for (int i = 0; i < 10; i++) {
       String number = String.valueOf(i + 1);
-      combo_quantity.getItems().add(i, number);
+      comboQuantity.getItems().add(i, number);
     }
-    combo_quantity.setEditable(true);
-    combo_quantity.getSelectionModel().selectFirst();
+    comboQuantity.setEditable(true);
+    comboQuantity.getSelectionModel().selectFirst();
   }
 
   /**
-   * Populates all enum item types inside the itemType dropdown on products tab
+   * Populates all enum item types inside the itemType dropdown on products tab.
    */
   void populateProductLineTabs() {
-    ArrayList< ItemType > typeNames = new ArrayList< ItemType >();
+    ArrayList<ItemType> typeNames = new ArrayList<ItemType>();
 
     for (ItemType typeValue : ItemType.values()) {
       typeNames.add(typeValue);
@@ -337,13 +451,13 @@ public class Controller {
     System.out.println("type array size = " + typeNames.size());
 
     for (int i = 0; i < typeNames.size(); i++) {
-      choice_Type.getItems().add(i, typeNames.get(i));
+      choiceType.getItems().add(i, typeNames.get(i));
     }
-    choice_Type.getSelectionModel().selectFirst();
+    choiceType.getSelectionModel().selectFirst();
   }
 
   /**
-   * Testing method for multimedia methods
+   * Testing method for multimedia methods.
    */
   public void testMultimedia() {
     AudioPlayer newAudioProduct = new AudioPlayer("DP-X1A", "Onkyo",
@@ -351,20 +465,20 @@ public class Controller {
     Screen newScreen = new Screen("720x480", 40, 22);
     MoviePlayer newMovieProduct = new MoviePlayer("DBPOWER MK101", "OracleProduction", newScreen,
         MonitorType.LCD);
-    ArrayList< MultimediaControl > productList = new ArrayList< MultimediaControl >();
+    ArrayList<MultimediaControl> productList = new ArrayList<MultimediaControl>();
     productList.add(newAudioProduct);
     productList.add(newMovieProduct);
     for (MultimediaControl p : productList) {
       System.out.println(p);
-      p.Play();
-      p.Stop();
-      p.Next();
-      p.Previous();
+      p.play();
+      p.stop();
+      p.next();
+      p.previous();
     }
   }
 
   /**
-   * Test production record method for producing production records
+   * Test production record method for producing production records.
    */
   public void testProductionRecord() {
     // test constructor used when creating production records from user interface
@@ -374,7 +488,7 @@ public class Controller {
       ProductionRecord pr = new ProductionRecord(0);
       System.out.println(pr.toString());
     }
-// test constructor used when creating production records from reading database
+
     ProductionRecord pr = new ProductionRecord(0, 3, "1", new Date(System.currentTimeMillis()));
 
     textLog.setText(textLog.getText() + pr.toString());

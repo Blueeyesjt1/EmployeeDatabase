@@ -1,8 +1,8 @@
 /**
- * Programmer Name: Jaden Williams
+ * Programmer Name: Jaden Williams.
  * Description: Screenspec interface that holds
- * resolution, refreshrate, and response time
- * Date: 9/18/2020 - 10/31/2020
+ * resolution, refreshrate, and response time.
+ * Date: 9/18/2020 - 10/31/2020.
  */
 
 public interface ScreenSpec {

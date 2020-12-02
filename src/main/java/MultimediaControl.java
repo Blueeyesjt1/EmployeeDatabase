@@ -1,16 +1,16 @@
 /**
- * Programmer Name: Jaden Williams
- * Description: Interface for multimediacontrol
- * Date: 9/18/2020 - 10/31/2020
+ * Programmer Name: Jaden Williams.
+ * Description: Interface for multimediacontrol.
+ * Date: 9/18/2020 - 10/31/2020.
  */
 
 public interface MultimediaControl {
 
-  public void Play();
+  public void play();
 
-  public void Stop();
+  public void stop();
 
-  public void Previous();
+  public void previous();
 
-  public void Next();
+  public void next();
 }
