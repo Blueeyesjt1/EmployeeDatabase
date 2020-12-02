@@ -24,20 +24,20 @@
                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   </rowConstraints>
                   <children>
-                    <TextField fx:id="txt_ProductName" promptText="Enter Product Name" stylesheets="@Style.css" GridPane.columnIndex="1" />
+                    <TextField fx:id="txtProductName" promptText="Enter Product Name" stylesheets="@Style.css" GridPane.columnIndex="1" />
                     <Label stylesheets="@Style.css" text="Product Name" />
                     <Label stylesheets="@Style.css" text="Manufacturer" GridPane.rowIndex="1">
                       <GridPane.margin>
                         <Insets />
                       </GridPane.margin>
                     </Label>
-                    <TextField fx:id="txt_Manufacturer" prefWidth="266.0" promptText="Enter Manufacturer" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <TextField fx:id="txtManufacturer" prefWidth="266.0" promptText="Enter Manufacturer" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                       <GridPane.margin>
                         <Insets />
                       </GridPane.margin>
                     </TextField>
                     <Label stylesheets="@Style.css" text="Item Type" GridPane.rowIndex="2" />
-                    <ChoiceBox fx:id="choice_Type" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <ChoiceBox fx:id="choiceType" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   </children>
                   <padding>
                     <Insets left="10.0" top="10.0" />
@@ -58,9 +58,9 @@
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@Style.css">
               <children>
                 <Label layoutX="12.0" layoutY="7.0" prefHeight="17.0" prefWidth="105.0" stylesheets="@Style.css" text="Products" />
-                <ListView fx:id="list_Produce" layoutX="12.0" layoutY="26.0" opacity="0.8" prefHeight="212.0" prefWidth="375.0" stylesheets="@Style.css" />
+                <ListView fx:id="listProduce" layoutX="12.0" layoutY="26.0" opacity="0.8" prefHeight="212.0" prefWidth="375.0" stylesheets="@Style.css" />
                 <Label layoutX="224.0" layoutY="254.0" stylesheets="@Style.css" text="Choose Quantity" />
-                <ComboBox fx:id="combo_quantity" editable="true" layoutX="321.0" layoutY="250.0" prefHeight="25.0" prefWidth="67.0" promptText="combo_quantity" stylesheets="@Style.css" />
+                <ComboBox fx:id="comboQuantity" editable="true" layoutX="321.0" layoutY="250.0" prefHeight="25.0" prefWidth="67.0" promptText="combo_quantity" stylesheets="@Style.css" />
                 <Button layoutX="274.0" layoutY="288.0" mnemonicParsing="false" onAction="#but_RecordProduction" stylesheets="@Style.css" text="Record Production" />
               </children>
             </AnchorPane>
@@ -90,14 +90,14 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
               <children>
-                <TextField fx:id="txt_EmployeeName" promptText="Enter Product Name" stylesheets="@Style.css" GridPane.columnIndex="1" />
+                <TextField fx:id="txtEmployeeName" promptText="Enter Product Name" stylesheets="@Style.css" GridPane.columnIndex="1" />
                 <Label stylesheets="@Style.css" text="Full Name" />
                 <Label stylesheets="@Style.css" text="Password" GridPane.rowIndex="1">
                   <GridPane.margin>
                     <Insets />
                   </GridPane.margin>
                 </Label>
-                <TextField fx:id="txt_EmployeePass" prefWidth="266.0" promptText="Enter Manufacturer" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <TextField fx:id="txtEmployeePass" prefWidth="266.0" promptText="Enter Manufacturer" stylesheets="@Style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                   <GridPane.margin>
                     <Insets />
                   </GridPane.margin>
