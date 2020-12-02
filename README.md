@@ -19,8 +19,13 @@
 #### 11-27-2020: 
   The program is now it its _RELEASE_ stage. The UI now has a 4th Employee tab to allow employee users to login to log the quantitites they record for production. As said, the recording log system now saves to the database to allow for history to be maintained to view previous employee actions.
   
+<b>Program Demo:</b>
+
+![ProductionGif5](https://user-images.githubusercontent.com/59098194/100936635-db71d380-34bf-11eb-9e9c-b93018fdc5b0.gif)
+  
 <b>Visual Diagram:</b>
-  ![diagramRelease](https://user-images.githubusercontent.com/59098194/100917276-eb2fee80-34a4-11eb-83eb-bf2f6de57594.png)
+
+![diagramRelease](https://user-images.githubusercontent.com/59098194/100917276-eb2fee80-34a4-11eb-83eb-bf2f6de57594.png)
   
 <b>Index Github Path:</b>
 https://github.com/Blueeyesjt1/gradleDataBaseFX/blob/master/Docs/index.html
