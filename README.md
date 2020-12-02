@@ -22,5 +22,6 @@
 <b>Visual Diagram:</b>
   ![diagramRelease](https://user-images.githubusercontent.com/59098194/100917276-eb2fee80-34a4-11eb-83eb-bf2f6de57594.png)
   
-<b>Visual Diagram:</b>
+<b>Index Github Path:</b>
+https://github.com/Blueeyesjt1/gradleDataBaseFX/blob/master/Docs/index.html
 
