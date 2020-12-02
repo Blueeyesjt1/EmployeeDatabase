@@ -23,14 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="795c79c8-a264-4e88-9570-8312ddd2a5ff" name="Default Changelist" comment="&quot;SpotBugs&quot; bug-checking completed.">
-      <change afterPath="$PROJECT_DIR$/Docs/diagramRelease.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MoviePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MoviePlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MultimediaControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MultimediaControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ProductionRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ProductionRecord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaDiagram.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/HR.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/HR.mv.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +294,7 @@
       <workItem from="1606766820154" duration="4115000" />
       <workItem from="1606922297815" duration="942000" />
       <workItem from="1606923393478" duration="91000" />
-      <workItem from="1606923502568" duration="6049000" />
+      <workItem from="1606923502568" duration="7033000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version with database">
       <created>1600444392551</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606926338784</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Release update 3 12-2-2020 1:54pm">
+      <created>1606935257394</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1606935257394</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +566,6 @@
       <path value="$PROJECT_DIR$/gradleDataBaseFX" />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Updated version with database" />
     <MESSAGE value="Updated version with database 2" />
     <MESSAGE value="Updated version with database 3" />
     <MESSAGE value="Updated version with database 5" />
@@ -591,7 +590,8 @@
     <MESSAGE value="Beta Comment overhaul 2 10/31/2020" />
     <MESSAGE value="Release update 1 11-27-2020 5:52pm" />
     <MESSAGE value="Release update 2 12-2-2020 11:23am" />
-    <option name="LAST_COMMIT_MESSAGE" value="Release update 2 12-2-2020 11:23am" />
+    <MESSAGE value="Release update 3 12-2-2020 1:54pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release update 3 12-2-2020 1:54pm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="907" y="379" key="#Inspections" timestamp="1604102649772">
@@ -700,10 +700,10 @@
     </state>
     <state x="761" y="275" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1606923958128" />
     <state x="890" y="335" width="1497" height="1065" key="SettingsEditor/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600354898017" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1606926342761">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1606935266162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1606926342761" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1606935266162" />
     <state x="4495" y="322" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1600462266143" />
     <state x="1099" y="410" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600452528571">
       <screen x="0" y="0" width="2560" height="1400" />
