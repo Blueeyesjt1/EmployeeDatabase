@@ -19,6 +19,11 @@
 #### 11-27-2020: 
   The program is now it its _RELEASE_ stage. The UI now has a 4th Employee tab to allow employee users to login to log the quantitites they record for production. As said, the recording log system now saves to the database to allow for history to be maintained to view previous employee actions.
   
+<b>Notes:</b>
+- If the user doesn't log in, the logs will set the username as anonymous. I could have simply made the button not work if they weren't logged in- but I thought it'd be more interesting to see how often a product is logged without an employee being logged in. Of course, this would never be something utilized in a real piece of software. This was only for visual purposes.
+- Having an incorrect name format set sthe username to 'default.'
+- The login info gets displayed in the logs but does not save to the database since it's not a product. I wanted to show when the login is confirmed.
+  
 <b>Program Demo:</b>
 
 ![ProductionGif5](https://user-images.githubusercontent.com/59098194/100936635-db71d380-34bf-11eb-9e9c-b93018fdc5b0.gif)
