@@ -16,5 +16,8 @@
 #### 10-31-2020: 
   The program is now in its _BETA_ stage. The program is now heavily-connected to the database to send and grab info to put into the program's UI elements.
  
- #### 11-27-2020: 
+#### 11-27-2020: 
   The program is now it its _RELEASE_ stage. The UI now has a 4th Employee tab to allow employee users to login to log the quantitites they record for production. As said, the recording log system now saves to the database to allow for history to be maintained to view previous employee actions.
+  
+##<b>Visual Diagram:</b>
+  ![diagramRelease](https://user-images.githubusercontent.com/59098194/100917276-eb2fee80-34a4-11eb-83eb-bf2f6de57594.png)
